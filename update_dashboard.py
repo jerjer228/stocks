@@ -120,3 +120,46 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+import pandas as pd
+import yfinance as yf
+
+# 範例：從 S&P 500 或特定Watchlist中篩選
+TICKERS = ["AAPL", "MSFT", "NVDA", "TSLA", "AMZN", "GOOGL", "META", "AMD", "PLTR", "INTC"] # 可擴充至全美股
+
+def get_top_10_recommendations(tickers):
+    recommendations = []
+    
+    for ticker in tickers:
+        df = yf.Ticker(ticker).history(period="60d")
+        if df.empty:
+            continue
+            
+        # 計算基礎技術指標
+        df['SMA20'] = df['Close'].rolling(window=20).mean()
+        df['SMA50'] = df['Close'].rolling(window=50).mean()
+        
+        last_price = df['Close'].iloc[-1]
+        sma20 = df['SMA20'].iloc[-1]
+        sma50 = df['SMA50'].iloc[-1]
+        volume_ratio = df['Volume'].iloc[-1] / df['Volume'].mean()
+        
+        # 簡單評分邏輯 (例如：突破 20SMA + 成交量放大)
+        score = 0
+        if last_price > sma20: score += 40
+        if sma20 > sma50: score += 30
+        if volume_ratio > 1.2: score += 30
+        
+        signal = "Strong Buy" if score >= 80 else ("Buy" if score >= 60 else "Watch")
+        
+        recommendations.append({
+            "ticker": ticker,
+            "price": round(last_price, 2),
+            "score": score,
+            "signal": signal,
+            "volume_ratio": round(volume_ratio, 2)
+        })
+    
+    # 按分數排序，取 Top 10
+    recommendations = sorted(recommendations, key=lambda x: x['score'], reverse=True)[:10]
+    return recommendations
