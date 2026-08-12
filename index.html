@@ -12,19 +12,39 @@
 </head>
 <body class="p-4 md:p-8 max-w-7xl mx-auto">
   
-  <!-- Header -->
-  <header class="flex justify-between items-center mb-6 pb-4 border-b border-gray-800">
+  <!-- Header & Search Bar -->
+  <header class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-6 pb-4 border-b border-gray-800">
     <div>
       <h1 class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
         <i data-lucide="shield-alert" class="text-blue-500"></i> PM Capital Allocation Dashboard
       </h1>
       <p class="text-xs text-gray-400 mt-1">自動化板塊輪動與量化資金配置系統</p>
     </div>
-    <div class="text-right">
-      <span class="text-xs text-gray-500">最後更新 (HKT)</span>
-      <div id="last-updated" class="text-sm font-mono text-gray-300">--:--:--</div>
+
+    <!-- Search Section -->
+    <div class="flex items-center gap-2 w-full md:w-auto">
+      <div class="relative w-full md:w-64">
+        <input id="search-input" type="text" placeholder="輸入美股代號 (如 TSLA)..." class="w-full bg-gray-900 border border-gray-700 text-white text-sm rounded-lg pl-9 pr-3 py-2 focus:outline-none focus:border-blue-500 uppercase">
+        <i data-lucide="search" class="w-4 h-4 text-gray-500 absolute left-3 top-2.5"></i>
+      </div>
+      <button onclick="searchStock()" class="bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold px-4 py-2 rounded-lg transition whitespace-nowrap">
+        搜尋
+      </button>
     </div>
   </header>
+
+  <!-- Search Result Card (Default Hidden) -->
+  <div id="search-result-box" class="hidden mb-6 bg-gray-900 border border-blue-500/50 rounded-xl p-5 shadow-2xl relative">
+    <button onclick="closeSearchResult()" class="absolute top-4 right-4 text-gray-400 hover:text-white">
+      <i data-lucide="x" class="w-5 h-5"></i>
+    </button>
+    <h3 class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+      <i data-lucide="sparkles" class="w-4 h-4"></i> 實時個股量化分析結果
+    </h3>
+    <div id="search-result-content" class="grid grid-cols-1 md:grid-cols-4 gap-4 mt-3">
+      <!-- Search result will render here -->
+    </div>
+  </div>
 
   <!-- Main 4-Card Grid -->
   <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
@@ -115,15 +135,15 @@
   </div>
 
   <script>
+    // 填入你的 Finnhub API Key 供前端實時搜尋使用
+    const FINNHUB_KEY = "d9u0ichr01qujo6mo0n0d9u0ichr01qujo6mo0ng";
+
     async function loadData() {
       try {
         const res = await fetch('data.json?t=' + Date.now());
         const data = await res.json();
 
-        // 1. Render Header
-        document.getElementById('last-updated').innerText = data.last_updated;
-
-        // 2. Render Card 1 (Confidence & Market)
+        // 1. Render Card 1 (Confidence & Market)
         const score = data.market.confidence_score;
         document.getElementById('confidence-score').innerText = score;
         document.getElementById('confidence-bar').style.width = score + '%';
@@ -159,20 +179,18 @@
           directive.innerText = "建議持倉：0% (空倉避險)";
         }
 
-        // 3. Render Card 2 (Tonight Trades)
+        // 2. Render Card 2
         document.getElementById('tonight-trades').innerHTML = data.tonight_trades.map(t => `
           <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
             <div>
               <span class="font-bold text-white mr-2">${t.ticker}</span>
               <span class="text-xs text-gray-400">${t.strategy}</span>
             </div>
-            <div class="flex items-center gap-2">
-              <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded border border-blue-700/30">Conviction ${t.conviction}</span>
-            </div>
+            <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded border border-blue-700/30">Conviction ${t.conviction}</span>
           </div>
         `).join('');
 
-        // 4. Render Card 3 (Long-term)
+        // 3. Render Card 3
         document.getElementById('long-term-picks').innerHTML = data.long_term_picks.map(p => `
           <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
             <div>
@@ -183,7 +201,7 @@
           </div>
         `).join('');
 
-        // 5. Render Card 4 (Avoid)
+        // 4. Render Card 4
         document.getElementById('avoid-list').innerHTML = data.avoid_list.map(a => `
           <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
             <div>
@@ -199,6 +217,82 @@
         console.error("載入數據失敗:", err);
       }
     }
+
+    // 搜尋股票邏輯
+    async function searchStock() {
+      const input = document.getElementById('search-input').value.trim().toUpperCase();
+      if (!input) return;
+
+      const resultBox = document.getElementById('search-result-box');
+      const resultContent = document.getElementById('search-result-content');
+      
+      resultBox.classList.remove('hidden');
+      resultContent.innerHTML = `<div class="col-span-4 text-gray-400 text-sm">搜尋中: ${input}...</div>`;
+
+      try {
+        const res = await fetch(`https://finnhub.io/api/v1/quote?symbol=${input}&token=${FINNHUB_KEY}`);
+        const data = await res.json();
+
+        if (!data || data.c === 0) {
+          resultContent.innerHTML = `<div class="col-span-4 text-rose-400 text-sm">找不到標的 ${input} 或 API 無數據。</div>`;
+          return;
+        }
+
+        const currentPrice = data.c;
+        const changePercent = data.dp;
+        const high = data.h;
+        const low = data.l;
+
+        // 即時量化算分
+        let conviction = 50;
+        let strategy = "區間盤整 / Covered Call";
+        let colorClass = "text-amber-400";
+
+        if (changePercent > 1.5) {
+          conviction = 85;
+          strategy = "動量突破 / 買入 Call Option";
+          colorClass = "text-emerald-400";
+        } else if (changePercent < -1.5) {
+          conviction = 20;
+          strategy = "技術破位 / 觀望或 Put 避險";
+          colorClass = "text-rose-400";
+        }
+
+        resultContent.innerHTML = `
+          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+            <div class="text-xs text-gray-500">標的 / 現價</div>
+            <div class="text-lg font-bold text-white mt-1">${input} <span class="text-sm font-mono text-gray-300">$${currentPrice.toFixed(2)}</span></div>
+          </div>
+          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+            <div class="text-xs text-gray-500">單日漲跌幅</div>
+            <div class="text-lg font-bold ${changePercent >= 0 ? 'text-emerald-400' : 'text-rose-400'} mt-1">${changePercent >= 0 ? '+' : ''}${changePercent.toFixed(2)}%</div>
+          </div>
+          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+            <div class="text-xs text-gray-500">Conviction 分數</div>
+            <div class="text-lg font-bold ${colorClass} mt-1">${conviction} / 100</div>
+          </div>
+          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+            <div class="text-xs text-gray-500">建議策略</div>
+            <div class="text-sm font-semibold text-gray-200 mt-1">${strategy}</div>
+          </div>
+        `;
+
+        lucide.createIcons();
+      } catch (err) {
+        resultContent.innerHTML = `<div class="col-span-4 text-rose-400 text-sm">搜尋失敗，請檢查 API Key 或網路狀態。</div>`;
+      }
+    }
+
+    function closeSearchResult() {
+      document.getElementById('search-result-box').classList.add('hidden');
+    }
+
+    // 支援 Enter 鍵搜尋
+    document.getElementById('search-input').addEventListener('keypress', function (e) {
+      if (e.key === 'Enter') {
+        searchStock();
+      }
+    });
 
     loadData();
   </script>
