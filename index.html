@@ -18,7 +18,7 @@
       <h1 class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
         <i data-lucide="shield-alert" class="text-blue-500"></i> PM Capital Allocation Dashboard
       </h1>
-      <p class="text-xs text-gray-400 mt-1">自動化板塊輪動與量化資金配置系統 (即時串流版)</p>
+      <p class="text-xs text-gray-400 mt-1">自動化板塊輪動與量化資金配置系統 (實時串流修正版)</p>
     </div>
 
     <!-- Search Section -->
@@ -40,7 +40,7 @@
       <div>
         <div class="flex items-center justify-end gap-1.5">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span id="market-session-badge" class="text-xs font-bold text-emerald-400">即時連線中</span>
+          <span id="market-session-badge" class="text-xs font-bold text-emerald-400">實時連線中</span>
         </div>
         <div id="last-updated" class="text-xs font-mono text-gray-400 mt-0.5">更新中...</div>
       </div>
@@ -170,25 +170,34 @@
   </div>
 
   <script>
+    // 觀察標的池
     const WATCHLIST = ["TSLA", "NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "AMD"];
-    // 擴充每日 Top 10 推薦池標的
     const TOP10_POOL = ["TSLA", "NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "AMD", "PLTR", "INTC", "AVGO", "COST", "NFLX", "QCOM", "ARM", "SMCI"];
 
+    // 支援雙 Proxy 備用機制的實時 Fetch
     async function fetchQuote(symbol) {
-      try {
-        const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1m&range=1d`;
-        const proxyUrl = `https://corsproxy.io/?` + encodeURIComponent(yahooUrl);
-        const res = await fetch(proxyUrl);
-        if (!res.ok) return null;
-        const data = await res.json();
-        const meta = data.chart.result[0].meta;
-        const currentPrice = meta.regularMarketPrice;
-        const prevClose = meta.chartPreviousClose;
-        const changePct = ((currentPrice - prevClose) / prevClose) * 100;
-        return { symbol, price: currentPrice, changePct };
-      } catch (e) {
-        return null;
+      const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1m&range=1d`;
+      
+      const proxies = [
+        url => `https://api.allorigins.win/raw?url=${encodeURIComponent(url)}`,
+        url => `https://corsproxy.io/?${encodeURIComponent(url)}`
+      ];
+
+      for (const getProxyUrl of proxies) {
+        try {
+          const res = await fetch(getProxyUrl(yahooUrl));
+          if (!res.ok) continue;
+          const data = await res.json();
+          const meta = data.chart.result[0].meta;
+          const currentPrice = meta.regularMarketPrice;
+          const prevClose = meta.chartPreviousClose;
+          const changePct = ((currentPrice - prevClose) / prevClose) * 100;
+          return { symbol, price: currentPrice, changePct };
+        } catch (e) {
+          // 當前 Proxy 失敗時自動切換至下一個
+        }
       }
+      return null;
     }
 
     async function fetchRealtimeDashboard() {
@@ -221,7 +230,7 @@
 
       score = Math.min(Math.max(score, 0), 100);
 
-      // 2. 更新 Card 1 (信心指數與總結)
+      // 2. 更新 Card 1 (信心指數)
       document.getElementById('confidence-score').innerText = score;
       document.getElementById('confidence-bar').style.width = score + '%';
 
@@ -253,79 +262,84 @@
         directive.innerText = "建議持倉：0% (防禦避險)";
       }
 
-      // 3. 抓取觀察池即時報價
+      // 3. 抓取觀察池個股報價 (Card 2, 3, 4)
       const stockQuotes = await Promise.all(WATCHLIST.map(s => fetchQuote(s)));
       const validQuotes = stockQuotes.filter(q => q !== null).sort((a, b) => b.changePct - a.changePct);
 
-      // Card 2: 今晚交易部署
-      document.getElementById('tonight-trades').innerHTML = validQuotes.slice(0, 3).map(q => `
-        <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
-          <div>
-            <span class="font-bold text-white mr-2">${q.symbol}</span>
-            <span class="text-xs text-gray-400">$${q.price.toFixed(2)} (${q.changePct >= 0 ? '+' : ''}${q.changePct.toFixed(2)}%)</span>
+      if (validQuotes.length > 0) {
+        // Card 2: 今晚交易部署 (取前 3 強勢)
+        document.getElementById('tonight-trades').innerHTML = validQuotes.slice(0, 3).map(q => `
+          <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
+            <div>
+              <span class="font-bold text-white mr-2">${q.symbol}</span>
+              <span class="text-xs text-gray-400">$${q.price.toFixed(2)} (${q.changePct >= 0 ? '+' : ''}${q.changePct.toFixed(2)}%)</span>
+            </div>
+            <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded border border-blue-700/30">
+              ${q.changePct > 1.0 ? '強勢動量 Call' : '區間觀察'}
+            </span>
           </div>
-          <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded border border-blue-700/30">
-            ${q.changePct > 1.0 ? '強勢動量 Call' : '區間觀察'}
-          </span>
-        </div>
-      `).join('');
+        `).join('');
 
-      // Card 3: 長線首選池
-      document.getElementById('long-term-picks').innerHTML = validQuotes.filter(q => q.changePct > 0).slice(0, 3).map(q => `
-        <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
-          <div>
-            <span class="font-bold text-emerald-400 mr-2">${q.symbol}</span>
-            <span class="text-xs text-gray-400">$${q.price.toFixed(2)}</span>
+        // Card 3: 長線首選池 (取正報酬標的)
+        const positiveQuotes = validQuotes.filter(q => q.changePct > 0);
+        document.getElementById('long-term-picks').innerHTML = (positiveQuotes.length ? positiveQuotes : validQuotes.slice(0, 3)).slice(0, 3).map(q => `
+          <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
+            <div>
+              <span class="font-bold text-emerald-400 mr-2">${q.symbol}</span>
+              <span class="text-xs text-gray-400">$${q.price.toFixed(2)}</span>
+            </div>
+            <span class="text-xs font-mono ${q.changePct >= 0 ? 'text-emerald-300' : 'text-rose-400'}">${q.changePct >= 0 ? '+' : ''}${q.changePct.toFixed(2)}%</span>
           </div>
-          <span class="text-xs font-mono text-emerald-300">+${q.changePct.toFixed(2)}%</span>
-        </div>
-      `).join('');
+        `).join('');
 
-      // Card 4: 避免交易 / 弱勢警示
-      document.getElementById('avoid-list').innerHTML = validQuotes.filter(q => q.changePct < 0).reverse().slice(0, 3).map(q => `
-        <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
-          <div>
-            <span class="font-bold text-rose-400 mr-2">${q.symbol}</span>
-            <span class="text-xs text-gray-400">$${q.price.toFixed(2)}</span>
+        // Card 4: 避免交易 / 弱勢警示 (取倒數 3 弱勢)
+        document.getElementById('avoid-list').innerHTML = [...validQuotes].reverse().slice(0, 3).map(q => `
+          <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
+            <div>
+              <span class="font-bold text-rose-400 mr-2">${q.symbol}</span>
+              <span class="text-xs text-gray-400">$${q.price.toFixed(2)}</span>
+            </div>
+            <span class="text-xs font-mono text-rose-300/80 bg-rose-950/40 px-2 py-0.5 rounded">${q.changePct >= 0 ? '+' : ''}${q.changePct.toFixed(2)}%</span>
           </div>
-          <span class="text-xs font-mono text-rose-300/80 bg-rose-950/40 px-2 py-0.5 rounded">${q.changePct.toFixed(2)}%</span>
-        </div>
-      `).join('');
+        `).join('');
+      }
 
-      // 4. 抓取與計算 Card 5: 每日 10 隻量化推薦股
+      // 4. Card 5: 每日 10 隻量化推薦股
       const top10Quotes = await Promise.all(TOP10_POOL.map(s => fetchQuote(s)));
       const validTop10 = top10Quotes.filter(q => q !== null);
-      
-      const scoredPicks = validTop10.map(q => {
-        let rankScore = 50 + (q.changePct * 10);
-        rankScore = Math.min(Math.max(Math.round(rankScore), 10), 99);
-        
-        let signal = "Watch";
-        let badgeStyle = "bg-gray-800 text-gray-400 border-gray-700";
-        if (rankScore >= 75) {
-          signal = "Strong Buy";
-          badgeStyle = "bg-emerald-950/80 text-emerald-400 border-emerald-800";
-        } else if (rankScore >= 55) {
-          signal = "Buy";
-          badgeStyle = "bg-amber-950/80 text-amber-400 border-amber-800";
-        }
 
-        return { ...q, rankScore, signal, badgeStyle };
-      }).sort((a, b) => b.rankScore - a.rankScore).slice(0, 10);
+      if (validTop10.length > 0) {
+        const scoredPicks = validTop10.map(q => {
+          let rankScore = 50 + (q.changePct * 10);
+          rankScore = Math.min(Math.max(Math.round(rankScore), 10), 99);
+          
+          let signal = "Watch";
+          let badgeStyle = "bg-gray-800 text-gray-400 border-gray-700";
+          if (rankScore >= 75) {
+            signal = "Strong Buy";
+            badgeStyle = "bg-emerald-950/80 text-emerald-400 border-emerald-800";
+          } else if (rankScore >= 55) {
+            signal = "Buy";
+            badgeStyle = "bg-amber-950/80 text-amber-400 border-amber-800";
+          }
 
-      document.getElementById('top10-list').innerHTML = scoredPicks.map(p => `
-        <tr class="hover:bg-gray-800/40 transition">
-          <td class="py-2.5 font-bold text-white">${p.symbol}</td>
-          <td class="py-2.5 text-gray-300">$${p.price.toFixed(2)}</td>
-          <td class="py-2.5 ${p.changePct >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${p.changePct >= 0 ? '+' : ''}${p.changePct.toFixed(2)}%</td>
-          <td class="py-2.5 text-gray-200 font-bold">${p.rankScore} / 100</td>
-          <td class="py-2.5 text-right">
-            <span class="px-2 py-0.5 text-[10px] font-sans font-bold rounded border ${p.badgeStyle}">${p.signal}</span>
-          </td>
-        </tr>
-      `).join('');
+          return { ...q, rankScore, signal, badgeStyle };
+        }).sort((a, b) => b.rankScore - a.rankScore).slice(0, 10);
 
-      // 更新時間
+        document.getElementById('top10-list').innerHTML = scoredPicks.map(p => `
+          <tr class="hover:bg-gray-800/40 transition">
+            <td class="py-2.5 font-bold text-white">${p.symbol}</td>
+            <td class="py-2.5 text-gray-300">$${p.price.toFixed(2)}</td>
+            <td class="py-2.5 ${p.changePct >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${p.changePct >= 0 ? '+' : ''}${p.changePct.toFixed(2)}%</td>
+            <td class="py-2.5 text-gray-200 font-bold">${p.rankScore} / 100</td>
+            <td class="py-2.5 text-right">
+              <span class="px-2 py-0.5 text-[10px] font-sans font-bold rounded border ${p.badgeStyle}">${p.signal}</span>
+            </td>
+          </tr>
+        `).join('');
+      }
+
+      // 更新即時時間
       const now = new Date();
       document.getElementById('last-updated').innerText = now.toTimeString().split(' ')[0] + ' (HKT)';
       
@@ -333,7 +347,7 @@
       lucide.createIcons();
     }
 
-    // 免 API Key 的 Yahoo Finance 個股搜尋
+    // 免 Key 個股搜尋
     async function searchStock() {
       const input = document.getElementById('search-input').value.trim().toUpperCase();
       if (!input) return;
@@ -394,11 +408,9 @@
       if (e.key === 'Enter') searchStock();
     });
 
-    // 頁面載入時先執行一次
+    // 初始化與每 15 秒自動背景更新
     fetchRealtimeDashboard();
-
-    // 每 30 秒自動無縫重新抓取即時數據
-    setInterval(fetchRealtimeDashboard, 30000);
+    setInterval(fetchRealtimeDashboard, 15000);
   </script>
 </body>
 </html>
