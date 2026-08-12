@@ -18,7 +18,7 @@
       <h1 class="text-2xl font-bold tracking-tight text-white flex items-center gap-2">
         <i data-lucide="shield-alert" class="text-blue-500"></i> PM Capital Allocation Dashboard
       </h1>
-      <p class="text-xs text-gray-400 mt-1">自動化板塊輪動與量化資金配置系統</p>
+      <p class="text-xs text-gray-400 mt-1">自動化板塊輪動與量化資金配置系統 (即時串流版)</p>
     </div>
 
     <!-- Search Section -->
@@ -32,14 +32,17 @@
       </button>
     </div>
 
-    <!-- Market Session & Last Updated -->
-    <div class="text-right flex items-center gap-2">
-      <span id="market-session-badge" class="px-2 py-0.5 text-xs font-bold rounded bg-gray-800 text-gray-400 border border-gray-700">
-        載入中...
-      </span>
+    <!-- Live Status & Refresh Control -->
+    <div class="text-right flex items-center gap-3">
+      <button onclick="fetchRealtimeDashboard()" class="p-2 bg-gray-800 hover:bg-gray-700 border border-gray-700 rounded-lg text-gray-300 transition" title="立即刷新">
+        <i data-lucide="refresh-cw" id="refresh-icon" class="w-4 h-4"></i>
+      </button>
       <div>
-        <span class="text-xs text-gray-500">最後更新 (HKT)</span>
-        <div id="last-updated" class="text-sm font-mono text-gray-300">--:--:--</div>
+        <div class="flex items-center justify-end gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span id="market-session-badge" class="text-xs font-bold text-emerald-400">即時連線中</span>
+        </div>
+        <div id="last-updated" class="text-xs font-mono text-gray-400 mt-0.5">更新中...</div>
       </div>
     </div>
   </header>
@@ -98,30 +101,30 @@
     <!-- Card 2 -->
     <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-lg">
       <h2 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4 flex items-center gap-2">
-        <i data-lucide="zap" class="w-4 h-4 text-amber-400"></i> 2. 今晚交易部署
+        <i data-lucide="zap" class="w-4 h-4 text-amber-400"></i> 2. 今晚交易部署 (即時動量)
       </h2>
       <div id="tonight-trades" class="space-y-2.5 text-sm">
-        <div class="text-gray-500 text-xs">加載中...</div>
+        <div class="text-gray-500 text-xs">即時連線抓取中...</div>
       </div>
     </div>
 
     <!-- Card 3 -->
     <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-lg">
       <h2 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4 flex items-center gap-2">
-        <i data-lucide="trending-up" class="w-4 h-4 text-blue-400"></i> 3. 長線首選池
+        <i data-lucide="trending-up" class="w-4 h-4 text-blue-400"></i> 3. 長線首選池 (即時強勢)
       </h2>
       <div id="long-term-picks" class="space-y-2.5 text-sm">
-        <div class="text-gray-500 text-xs">加載中...</div>
+        <div class="text-gray-500 text-xs">即時連線抓取中...</div>
       </div>
     </div>
 
     <!-- Card 4 -->
     <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-lg">
       <h2 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4 flex items-center gap-2">
-        <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400"></i> 4. 避免交易 / 風險警告
+        <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-400"></i> 4. 避免交易 / 弱勢警示
       </h2>
       <div id="avoid-list" class="space-y-2.5 text-sm">
-        <div class="text-gray-500 text-xs">加載中...</div>
+        <div class="text-gray-500 text-xs">即時連線抓取中...</div>
       </div>
     </div>
 
@@ -135,7 +138,7 @@
       </div>
       <div>
         <h3 class="text-xs uppercase tracking-wider text-blue-400 font-bold">底部行動結論</h3>
-        <p id="action-summary" class="text-base font-semibold text-white mt-0.5">正在計算市場數據...</p>
+        <p id="action-summary" class="text-base font-semibold text-white mt-0.5">正在獲取即時數據...</p>
       </div>
     </div>
     <div id="action-directive" class="px-4 py-2 rounded-lg bg-blue-600 text-white font-bold text-sm whitespace-nowrap">
@@ -144,106 +147,135 @@
   </div>
 
   <script>
-    async function loadData() {
+    const WATCHLIST = ["TSLA", "NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "AMD"];
+
+    async function fetchQuote(symbol) {
       try {
-        const res = await fetch('data.json?t=' + Date.now());
-        if (!res.ok) throw new Error("data.json 未找到");
+        const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${symbol}?interval=1m&range=1d`;
+        const proxyUrl = `https://corsproxy.io/?` + encodeURIComponent(yahooUrl);
+        const res = await fetch(proxyUrl);
+        if (!res.ok) return null;
         const data = await res.json();
-
-        // 渲染最後更新時間
-        if (data.last_updated) {
-          document.getElementById('last-updated').innerText = data.last_updated;
-        }
-
-        // 渲染市場時段標籤
-        const sessionBadge = document.getElementById('market-session-badge');
-        if (sessionBadge && data.market && data.market.session) {
-          sessionBadge.innerText = data.market.session;
-          if (data.market.session.includes('盤前') || data.market.session.includes('盤後')) {
-            sessionBadge.className = "px-2 py-0.5 text-xs font-bold rounded bg-amber-900/50 text-amber-300 border border-amber-700/50";
-          } else if (data.market.session.includes('盤中')) {
-            sessionBadge.className = "px-2 py-0.5 text-xs font-bold rounded bg-emerald-900/50 text-emerald-300 border border-emerald-700/50";
-          } else {
-            sessionBadge.className = "px-2 py-0.5 text-xs font-bold rounded bg-gray-800 text-gray-400 border border-gray-700";
-          }
-        }
-
-        // 渲染 Card 1 (信心指數)
-        const score = data.market.confidence_score;
-        document.getElementById('confidence-score').innerText = score;
-        document.getElementById('confidence-bar').style.width = score + '%';
-        document.getElementById('spy-status').innerText = data.market.spy_status;
-        document.getElementById('qqq-status').innerText = data.market.qqq_status;
-        document.getElementById('vix-value').innerText = data.market.vix_val;
-
-        const badge = document.getElementById('allocation-badge');
-        const summary = document.getElementById('action-summary');
-        const directive = document.getElementById('action-directive');
-        const regimeStatus = document.getElementById('regime-status');
-
-        if (score > 75) {
-          badge.className = "px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30";
-          badge.innerText = "全倉執行 (>75)";
-          regimeStatus.innerText = "牛市多頭輪動良好";
-          summary.innerText = "市場結構極佳，各板塊輪動正常。建議執行全倉/高 Conviction 策略部署。";
-          directive.className = "px-4 py-2 rounded-lg bg-emerald-600 text-white font-bold text-sm";
-          directive.innerText = "建議持倉：100% 全倉";
-        } else if (score >= 60) {
-          badge.className = "px-2.5 py-1 text-xs font-bold rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30";
-          badge.innerText = "選擇性部署 25-50% (60-75)";
-          regimeStatus.innerText = "震盪中性 / 擇優進場";
-          summary.innerText = "市場趨勢分化。僅選擇高 Conviction 標的，總倉位控制在 25-50%。";
-          directive.className = "px-4 py-2 rounded-lg bg-amber-600 text-white font-bold text-sm";
-          directive.innerText = "建議持倉：25% - 50%";
-        } else {
-          badge.className = "px-2.5 py-1 text-xs font-bold rounded-full bg-rose-500/20 text-rose-400 border border-rose-500/30";
-          badge.innerText = "空倉 / 防禦策略 (<60)";
-          regimeStatus.innerText = "高風險 / 破位下跌";
-          summary.innerText = "市場環境劣勢，保持空倉或嚴格避險。";
-          directive.className = "px-4 py-2 rounded-lg bg-rose-600 text-white font-bold text-sm";
-          directive.innerText = "建議持倉：0% (空倉避險)";
-        }
-
-        // 渲染 Card 2 (今晚交易部署)
-        document.getElementById('tonight-trades').innerHTML = data.tonight_trades.map(t => `
-          <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
-            <div>
-              <span class="font-bold text-white mr-2">${t.ticker}</span>
-              <span class="text-xs text-gray-400">${t.strategy}</span>
-            </div>
-            <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded border border-blue-700/30">Conviction ${t.conviction}</span>
-          </div>
-        `).join('');
-
-        // 渲染 Card 3 (長線首選池)
-        document.getElementById('long-term-picks').innerHTML = data.long_term_picks.map(p => `
-          <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
-            <div>
-              <span class="font-bold text-emerald-400 mr-2">${p.ticker}</span>
-              <span class="text-xs text-gray-400">${p.reason}</span>
-            </div>
-            <span class="text-xs font-mono text-gray-300">${p.score}分</span>
-          </div>
-        `).join('');
-
-        // 渲染 Card 4 (避免交易)
-        document.getElementById('avoid-list').innerHTML = data.avoid_list.map(a => `
-          <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
-            <div>
-              <span class="font-bold text-rose-400 mr-2">${a.ticker}</span>
-              <span class="text-xs text-gray-400">${a.reason}</span>
-            </div>
-            <span class="text-xs font-mono text-rose-300/80 bg-rose-950/40 px-2 py-0.5 rounded">${a.risk_level}</span>
-          </div>
-        `).join('');
-
-        lucide.createIcons();
-      } catch (err) {
-        console.error("數據加載失敗:", err);
+        const meta = data.chart.result[0].meta;
+        const currentPrice = meta.regularMarketPrice;
+        const prevClose = meta.chartPreviousClose;
+        const changePct = ((currentPrice - prevClose) / prevClose) * 100;
+        return { symbol, price: currentPrice, changePct };
+      } catch (e) {
+        return null;
       }
     }
 
-    // 前端即時搜尋（帶 CORS Proxy 繞過瀏覽器阻擋）
+    async function fetchRealtimeDashboard() {
+      const refreshIcon = document.getElementById('refresh-icon');
+      if (refreshIcon) refreshIcon.classList.add('animate-spin');
+
+      // 1. 抓取大盤指數 SPY, QQQ, VIX
+      const [spy, qqq, vix] = await Promise.all([
+        fetchQuote('SPY'),
+        fetchQuote('QQQ'),
+        fetchQuote('^VIX')
+      ]);
+
+      let score = 50;
+      if (spy) {
+        document.getElementById('spy-status').innerText = `${spy.changePct >= 0 ? '+' : ''}${spy.changePct.toFixed(2)}%`;
+        if (spy.changePct > 0.5) score += 15;
+        else if (spy.changePct < -0.5) score -= 15;
+      }
+      if (qqq) {
+        document.getElementById('qqq-status').innerText = `${qqq.changePct >= 0 ? '+' : ''}${qqq.changePct.toFixed(2)}%`;
+        if (qqq.changePct > 0.5) score += 15;
+        else if (qqq.changePct < -0.5) score -= 15;
+      }
+      if (vix) {
+        document.getElementById('vix-value').innerText = vix.price.toFixed(2);
+        if (vix.price < 18) score += 20;
+        else if (vix.price > 25) score -= 20;
+      }
+
+      score = Math.min(Math.max(score, 0), 100);
+
+      // 2. 更新 Card 1 (信心指數與總結)
+      document.getElementById('confidence-score').innerText = score;
+      document.getElementById('confidence-bar').style.width = score + '%';
+
+      const badge = document.getElementById('allocation-badge');
+      const summary = document.getElementById('action-summary');
+      const directive = document.getElementById('action-directive');
+      const regimeStatus = document.getElementById('regime-status');
+
+      if (score > 75) {
+        badge.className = "px-2.5 py-1 text-xs font-bold rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500/30";
+        badge.innerText = "全倉執行 (>75)";
+        regimeStatus.innerText = "牛市多頭輪動良好";
+        summary.innerText = "即時市場結構良好，建議執行全倉 / 高 Conviction 策略部署。";
+        directive.className = "px-4 py-2 rounded-lg bg-emerald-600 text-white font-bold text-sm";
+        directive.innerText = "建議持倉：100% 全倉";
+      } else if (score >= 60) {
+        badge.className = "px-2.5 py-1 text-xs font-bold rounded-full bg-amber-500/20 text-amber-400 border border-amber-500/30";
+        badge.innerText = "選擇性部署 25-50%";
+        regimeStatus.innerText = "震盪中性 / 擇優進場";
+        summary.innerText = "即時趨勢分化，僅選擇高 Conviction 標的，倉位控制在 25-50%。";
+        directive.className = "px-4 py-2 rounded-lg bg-amber-600 text-white font-bold text-sm";
+        directive.innerText = "建議持倉：25% - 50%";
+      } else {
+        badge.className = "px-2.5 py-1 text-xs font-bold rounded-full bg-rose-500/20 text-rose-400 border border-rose-500/30";
+        badge.innerText = "空倉 / 防禦策略";
+        regimeStatus.innerText = "高風險 / 破位下跌";
+        summary.innerText = "即時市場壓力較大，建議暫停新開倉或嚴格執行止損避險。";
+        directive.className = "px-4 py-2 rounded-lg bg-rose-600 text-white font-bold text-sm";
+        directive.innerText = "建議持倉：0% (防禦避險)";
+      }
+
+      // 3. 抓取觀察池即時報價
+      const stockQuotes = await Promise.all(WATCHLIST.map(s => fetchQuote(s)));
+      const validQuotes = stockQuotes.filter(q => q !== null).sort((a, b) => b.changePct - a.changePct);
+
+      // Card 2: 今晚交易部署
+      document.getElementById('tonight-trades').innerHTML = validQuotes.slice(0, 3).map(q => `
+        <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
+          <div>
+            <span class="font-bold text-white mr-2">${q.symbol}</span>
+            <span class="text-xs text-gray-400">$${q.price.toFixed(2)} (${q.changePct >= 0 ? '+' : ''}${q.changePct.toFixed(2)}%)</span>
+          </div>
+          <span class="text-xs font-mono bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded border border-blue-700/30">
+            ${q.changePct > 1.0 ? '強勢動量 Call' : '區間觀察'}
+          </span>
+        </div>
+      `).join('');
+
+      // Card 3: 長線首選池
+      document.getElementById('long-term-picks').innerHTML = validQuotes.filter(q => q.changePct > 0).slice(0, 3).map(q => `
+        <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
+          <div>
+            <span class="font-bold text-emerald-400 mr-2">${q.symbol}</span>
+            <span class="text-xs text-gray-400">$${q.price.toFixed(2)}</span>
+          </div>
+          <span class="text-xs font-mono text-emerald-300">+${q.changePct.toFixed(2)}%</span>
+        </div>
+      `).join('');
+
+      // Card 4: 避免交易 / 弱勢警示
+      document.getElementById('avoid-list').innerHTML = validQuotes.filter(q => q.changePct < 0).reverse().slice(0, 3).map(q => `
+        <div class="flex justify-between items-center p-2.5 bg-gray-950/60 rounded border border-gray-800/80">
+          <div>
+            <span class="font-bold text-rose-400 mr-2">${q.symbol}</span>
+            <span class="text-xs text-gray-400">$${q.price.toFixed(2)}</span>
+          </div>
+          <span class="text-xs font-mono text-rose-300/80 bg-rose-950/40 px-2 py-0.5 rounded">${q.changePct.toFixed(2)}%</span>
+        </div>
+      `).join('');
+
+      // 更新時間
+      const now = new Date();
+      document.getElementById('last-updated').innerText = now.toTimeString().split(' ')[0] + ' (HKT)';
+      
+      if (refreshIcon) refreshIcon.classList.remove('animate-spin');
+      lucide.createIcons();
+    }
+
+    // 免 API Key 的 Yahoo Finance 個股搜尋
     async function searchStock() {
       const input = document.getElementById('search-input').value.trim().toUpperCase();
       if (!input) return;
@@ -252,59 +284,48 @@
       const resultContent = document.getElementById('search-result-content');
       
       resultBox.classList.remove('hidden');
-      resultContent.innerHTML = `<div class="col-span-4 text-gray-400 text-sm">搜尋中: ${input}...</div>`;
+      resultContent.innerHTML = `<div class="col-span-4 text-gray-400 text-sm">搜尋即時行情中: ${input}...</div>`;
 
-      try {
-        const yahooUrl = `https://query1.finance.yahoo.com/v8/finance/chart/${input}?interval=1d`;
-        const proxyUrl = `https://corsproxy.io/?` + encodeURIComponent(yahooUrl);
-        
-        const res = await fetch(proxyUrl);
-        if (!res.ok) throw new Error("無效的代號或 API 請求失敗");
-
-        const data = await res.json();
-        const meta = data.chart.result[0].meta;
-        const currentPrice = meta.regularMarketPrice;
-        const previousClose = meta.chartPreviousClose;
-        const changePercent = ((currentPrice - previousClose) / previousClose) * 100;
-
-        let conviction = 50;
-        let strategy = "區間盤整 / Covered Call";
-        let colorClass = "text-amber-400";
-
-        if (changePercent > 1.5) {
-          conviction = 85;
-          strategy = "動量突破 / 買入 Call Option";
-          colorClass = "text-emerald-400";
-        } else if (changePercent < -1.5) {
-          conviction = 20;
-          strategy = "技術破位 / 觀望或 Put 避險";
-          colorClass = "text-rose-400";
-        }
-
-        resultContent.innerHTML = `
-          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
-            <div class="text-xs text-gray-500">標的 / 現價</div>
-            <div class="text-lg font-bold text-white mt-1">${input} <span class="text-sm font-mono text-gray-300">$${currentPrice.toFixed(2)}</span></div>
-          </div>
-          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
-            <div class="text-xs text-gray-500">單日漲跌幅</div>
-            <div class="text-lg font-bold ${changePercent >= 0 ? 'text-emerald-400' : 'text-rose-400'} mt-1">${changePercent >= 0 ? '+' : ''}${changePercent.toFixed(2)}%</div>
-          </div>
-          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
-            <div class="text-xs text-gray-500">Conviction 分數</div>
-            <div class="text-lg font-bold ${colorClass} mt-1">${conviction} / 100</div>
-          </div>
-          <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
-            <div class="text-xs text-gray-500">建議策略</div>
-            <div class="text-sm font-semibold text-gray-200 mt-1">${strategy}</div>
-          </div>
-        `;
-
-        lucide.createIcons();
-      } catch (err) {
-        console.error("搜尋錯誤:", err);
-        resultContent.innerHTML = `<div class="col-span-4 text-rose-400 text-sm">搜尋失敗，請確認標的代號是否正確 (如 TSLA, NVDA)。</div>`;
+      const q = await fetchQuote(input);
+      if (!q) {
+        resultContent.innerHTML = `<div class="col-span-4 text-rose-400 text-sm">搜尋失敗，請確認標的代號是否正確。</div>`;
+        return;
       }
+
+      let conviction = 50;
+      let strategy = "區間盤整 / Covered Call";
+      let colorClass = "text-amber-400";
+
+      if (q.changePct > 1.5) {
+        conviction = 85;
+        strategy = "強勢突破 / 買入 Call Option";
+        colorClass = "text-emerald-400";
+      } else if (q.changePct < -1.5) {
+        conviction = 20;
+        strategy = "技術破位 / 觀望或 Put 避險";
+        colorClass = "text-rose-400";
+      }
+
+      resultContent.innerHTML = `
+        <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+          <div class="text-xs text-gray-500">標的 / 即時現價</div>
+          <div class="text-lg font-bold text-white mt-1">${q.symbol} <span class="text-sm font-mono text-gray-300">$${q.price.toFixed(2)}</span></div>
+        </div>
+        <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+          <div class="text-xs text-gray-500">當前漲跌幅</div>
+          <div class="text-lg font-bold ${q.changePct >= 0 ? 'text-emerald-400' : 'text-rose-400'} mt-1">${q.changePct >= 0 ? '+' : ''}${q.changePct.toFixed(2)}%</div>
+        </div>
+        <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+          <div class="text-xs text-gray-500">Conviction 分數</div>
+          <div class="text-lg font-bold ${colorClass} mt-1">${conviction} / 100</div>
+        </div>
+        <div class="bg-gray-950/60 p-3 rounded-lg border border-gray-800">
+          <div class="text-xs text-gray-500">建議策略</div>
+          <div class="text-sm font-semibold text-gray-200 mt-1">${strategy}</div>
+        </div>
+      `;
+
+      lucide.createIcons();
     }
 
     function closeSearchResult() {
@@ -315,7 +336,11 @@
       if (e.key === 'Enter') searchStock();
     });
 
-    loadData();
+    // 頁面載入時先執行一次
+    fetchRealtimeDashboard();
+
+    // 每 30 秒自動無縫重新抓取即時數據
+    setInterval(fetchRealtimeDashboard, 30000);
   </script>
 </body>
 </html>
