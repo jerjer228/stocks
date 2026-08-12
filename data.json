@@ -1,0 +1,50 @@
+{
+  "last_updated": "2026-08-12 14:54:29",
+  "market": {
+    "confidence_score": 47,
+    "spy_status": "空頭修整 (-0.32%)",
+    "qqq_status": "空頭修整 (-0.34%)",
+    "vix_val": "0.00"
+  },
+  "tonight_trades": [
+    {
+      "ticker": "AMD",
+      "strategy": "動量突破 / Call Option",
+      "conviction": "60/100"
+    },
+    {
+      "ticker": "META",
+      "strategy": "區間低吸 / Covered Call",
+      "conviction": "65/100"
+    },
+    {
+      "ticker": "TSLA",
+      "strategy": "區間低吸 / Covered Call",
+      "conviction": "65/100"
+    }
+  ],
+  "long_term_picks": [
+    {
+      "ticker": "AMD",
+      "reason": "強勢板塊領跑標的",
+      "score": 60
+    }
+  ],
+  "avoid_list": [
+    {
+      "ticker": "AAPL",
+      "reason": "單日技術破位，暫避觀望",
+      "risk_level": "高風險"
+    },
+    {
+      "ticker": "AMZN",
+      "reason": "單日技術破位，暫避觀望",
+      "risk_level": "高風險"
+    },
+    {
+      "ticker": "GOOGL",
+      "reason": "單日技術破位，暫避觀望",
+      "risk_level": "高風險"
+    }
+  ]
+}
