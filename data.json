@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-12 20:29:05",
+  "last_updated": "2026-08-12 20:33:45",
   "market": {
-    "confidence_score": 77,
-    "spy_status": "漲 (+0.27%)",
-    "qqq_status": "漲 (+0.71%)",
+    "confidence_score": 74,
+    "spy_status": "漲 (+0.30%)",
+    "qqq_status": "漲 (+0.78%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $479.94",
-      "conviction": "60/100"
+      "strategy": "盤前動量 / $482.09",
+      "conviction": "80/100"
     },
     {
       "ticker": "NVDA",
-      "strategy": "盤前觀望 / $219.54",
+      "strategy": "盤前觀望 / $219.82",
       "conviction": "65/100"
     },
     {
-      "ticker": "AMZN",
-      "strategy": "盤前觀望 / $273.53",
+      "ticker": "TSLA",
+      "strategy": "盤前觀望 / $334.15",
       "conviction": "65/100"
     }
   ],
@@ -28,8 +28,80 @@
     {
       "ticker": "AMD",
       "reason": "盤前強勢領漲",
-      "score": 60
+      "score": 80
     }
   ],
-  "avoid_list": []
+  "avoid_list": [],
+  "top_10_recommendations": [
+    {
+      "ticker": "NVDA",
+      "price": 217.5,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.8
+    },
+    {
+      "ticker": "MSFT",
+      "price": 503.81,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.58
+    },
+    {
+      "ticker": "AMZN",
+      "price": 272.27,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.63
+    },
+    {
+      "ticker": "PLTR",
+      "price": 174.94,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.93
+    },
+    {
+      "ticker": "INTC",
+      "price": 97.71,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.38
+    },
+    {
+      "ticker": "AVGO",
+      "price": 416.08,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.7
+    },
+    {
+      "ticker": "SMCI",
+      "price": 31.6,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.89
+    },
+    {
+      "ticker": "COST",
+      "price": 944.32,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.9
+    },
+    {
+      "ticker": "NFLX",
+      "price": 74.79,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.6
+    },
+    {
+      "ticker": "ARM",
+      "price": 268.93,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.53
+    }
+  ]
 }
