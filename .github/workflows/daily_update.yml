@@ -1,9 +1,9 @@
-name: Daily PM Dashboard Update
+name: PM Dashboard 15-Min Auto Update
 
 on:
   schedule:
-    # 00:00 UTC = 08:00 HKT (每日香港時間早上 8 點自動執行)
-    - cron: '0 0 * * *'
+    # 每 15 分鐘自動執行一次
+    - cron: '*/15 * * * *'
   workflow_dispatch: # 支援手動點擊觸發
 
 jobs:
@@ -34,7 +34,7 @@ jobs:
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
           git diff --quiet && git diff --staged --quiet || (
-            git commit -m "Auto-update dashboard data [HKT 08:00]" && \
+            git commit -m "Auto-update dashboard data [15-Min Interval]" && \
             git pull --rebase origin main && \
             git push
           )
