@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-12 20:33:45",
+  "last_updated": "2026-08-12 20:40:53",
   "market": {
-    "confidence_score": 74,
-    "spy_status": "漲 (+0.30%)",
-    "qqq_status": "漲 (+0.78%)",
+    "confidence_score": 77,
+    "spy_status": "漲 (+0.37%)",
+    "qqq_status": "漲 (+0.89%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $482.09",
+      "strategy": "盤前動量 / $483.00",
       "conviction": "80/100"
     },
     {
       "ticker": "NVDA",
-      "strategy": "盤前觀望 / $219.82",
-      "conviction": "65/100"
+      "strategy": "盤前動量 / $220.34",
+      "conviction": "60/100"
     },
     {
       "ticker": "TSLA",
-      "strategy": "盤前觀望 / $334.15",
+      "strategy": "盤前觀望 / $333.88",
       "conviction": "65/100"
     }
   ],
@@ -29,10 +29,22 @@
       "ticker": "AMD",
       "reason": "盤前強勢領漲",
       "score": 80
+    },
+    {
+      "ticker": "NVDA",
+      "reason": "盤前強勢領漲",
+      "score": 60
     }
   ],
   "avoid_list": [],
   "top_10_recommendations": [
+    {
+      "ticker": "PLTR",
+      "price": 175.23,
+      "score": 100,
+      "signal": "Strong Buy",
+      "volume_ratio": 1.23
+    },
     {
       "ticker": "NVDA",
       "price": 217.5,
@@ -53,13 +65,6 @@
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 0.63
-    },
-    {
-      "ticker": "PLTR",
-      "price": 174.94,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.93
     },
     {
       "ticker": "INTC",
@@ -98,10 +103,10 @@
     },
     {
       "ticker": "ARM",
-      "price": 268.93,
+      "price": 267.85,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.53
+      "volume_ratio": 0.51
     }
   ]
 }
