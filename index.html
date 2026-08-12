@@ -130,6 +130,29 @@
 
   </div>
 
+  <!-- Card 5: Top 10 量化推薦股區塊 -->
+  <div class="bg-gray-900 border border-gray-800 rounded-xl p-5 shadow-lg mb-6">
+    <h2 class="text-sm font-semibold text-gray-400 tracking-wider uppercase mb-4 flex items-center gap-2">
+      <i data-lucide="target" class="w-4 h-4 text-purple-400"></i> 5. 每日 10 隻量化推薦股
+    </h2>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left text-xs">
+        <thead class="text-gray-500 uppercase border-b border-gray-800">
+          <tr>
+            <th class="pb-2">代號</th>
+            <th class="pb-2">現價</th>
+            <th class="pb-2">漲跌幅</th>
+            <th class="pb-2">Conviction 評分</th>
+            <th class="pb-2 text-right">建議訊號</th>
+          </tr>
+        </thead>
+        <tbody id="top10-list" class="divide-y divide-gray-800/60 font-mono">
+          <tr><td colspan="5" class="py-4 text-center text-gray-500 font-sans">載入即時推薦數據中...</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- Bottom Banner -->
   <div id="action-banner" class="bg-blue-950/40 border border-blue-800/60 rounded-xl p-5 shadow-xl flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
     <div class="flex items-start gap-3">
@@ -148,6 +171,8 @@
 
   <script>
     const WATCHLIST = ["TSLA", "NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "AMD"];
+    // 擴充每日 Top 10 推薦池標的
+    const TOP10_POOL = ["TSLA", "NVDA", "AAPL", "MSFT", "AMZN", "META", "GOOGL", "AMD", "PLTR", "INTC", "AVGO", "COST", "NFLX", "QCOM", "ARM", "SMCI"];
 
     async function fetchQuote(symbol) {
       try {
@@ -265,6 +290,39 @@
           </div>
           <span class="text-xs font-mono text-rose-300/80 bg-rose-950/40 px-2 py-0.5 rounded">${q.changePct.toFixed(2)}%</span>
         </div>
+      `).join('');
+
+      // 4. 抓取與計算 Card 5: 每日 10 隻量化推薦股
+      const top10Quotes = await Promise.all(TOP10_POOL.map(s => fetchQuote(s)));
+      const validTop10 = top10Quotes.filter(q => q !== null);
+      
+      const scoredPicks = validTop10.map(q => {
+        let rankScore = 50 + (q.changePct * 10);
+        rankScore = Math.min(Math.max(Math.round(rankScore), 10), 99);
+        
+        let signal = "Watch";
+        let badgeStyle = "bg-gray-800 text-gray-400 border-gray-700";
+        if (rankScore >= 75) {
+          signal = "Strong Buy";
+          badgeStyle = "bg-emerald-950/80 text-emerald-400 border-emerald-800";
+        } else if (rankScore >= 55) {
+          signal = "Buy";
+          badgeStyle = "bg-amber-950/80 text-amber-400 border-amber-800";
+        }
+
+        return { ...q, rankScore, signal, badgeStyle };
+      }).sort((a, b) => b.rankScore - a.rankScore).slice(0, 10);
+
+      document.getElementById('top10-list').innerHTML = scoredPicks.map(p => `
+        <tr class="hover:bg-gray-800/40 transition">
+          <td class="py-2.5 font-bold text-white">${p.symbol}</td>
+          <td class="py-2.5 text-gray-300">$${p.price.toFixed(2)}</td>
+          <td class="py-2.5 ${p.changePct >= 0 ? 'text-emerald-400' : 'text-rose-400'}">${p.changePct >= 0 ? '+' : ''}${p.changePct.toFixed(2)}%</td>
+          <td class="py-2.5 text-gray-200 font-bold">${p.rankScore} / 100</td>
+          <td class="py-2.5 text-right">
+            <span class="px-2 py-0.5 text-[10px] font-sans font-bold rounded border ${p.badgeStyle}">${p.signal}</span>
+          </td>
+        </tr>
       `).join('');
 
       // 更新時間
