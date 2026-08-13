@@ -1,30 +1,36 @@
 {
-  "last_updated": "2026-08-13 17:44:16",
+  "last_updated": "2026-08-13 20:07:29",
   "market": {
-    "confidence_score": 65,
+    "confidence_score": 69,
     "spy_status": "漲 (+0.20%)",
-    "qqq_status": "漲 (+0.19%)",
+    "qqq_status": "漲 (+0.14%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
+      "ticker": "MSFT",
+      "strategy": "盤前動量 / $494.43",
+      "conviction": "60/100"
+    },
+    {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $303.72",
+      "strategy": "盤前觀望 / $303.22",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $345.77",
-      "conviction": "65/100"
-    },
-    {
-      "ticker": "MSFT",
-      "strategy": "盤前觀望 / $492.48",
+      "strategy": "盤前觀望 / $344.93",
       "conviction": "65/100"
     }
   ],
-  "long_term_picks": [],
+  "long_term_picks": [
+    {
+      "ticker": "MSFT",
+      "reason": "盤前強勢領漲",
+      "score": 60
+    }
+  ],
   "avoid_list": [],
   "top_10_recommendations": [
     {
