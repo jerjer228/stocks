@@ -1,46 +1,30 @@
 {
-  "last_updated": "2026-08-14 13:20:51",
+  "last_updated": "2026-08-14 17:35:14",
   "market": {
-    "confidence_score": 89,
-    "spy_status": "漲 (+0.75%)",
-    "qqq_status": "漲 (+1.34%)",
+    "confidence_score": 71,
+    "spy_status": "漲 (+0.02%)",
+    "qqq_status": "漲 (+0.07%)",
     "vix_val": "18.00",
-    "session": "休市 (Closed)"
+    "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
-      "ticker": "TSLA",
-      "strategy": "盤前動量 / $341.51",
-      "conviction": "80/100"
+      "ticker": "GOOGL",
+      "strategy": "盤前觀望 / $347.10",
+      "conviction": "65/100"
     },
     {
-      "ticker": "META",
-      "strategy": "盤前動量 / $593.98",
-      "conviction": "80/100"
+      "ticker": "NVDA",
+      "strategy": "盤前觀望 / $225.96",
+      "conviction": "65/100"
     },
     {
-      "ticker": "MSFT",
-      "strategy": "盤前動量 / $495.87",
-      "conviction": "60/100"
+      "ticker": "AAPL",
+      "strategy": "盤前觀望 / $305.45",
+      "conviction": "65/100"
     }
   ],
-  "long_term_picks": [
-    {
-      "ticker": "TSLA",
-      "reason": "盤前強勢領漲",
-      "score": 80
-    },
-    {
-      "ticker": "META",
-      "reason": "盤前強勢領漲",
-      "score": 80
-    },
-    {
-      "ticker": "MSFT",
-      "reason": "盤前強勢領漲",
-      "score": 60
-    }
-  ],
+  "long_term_picks": [],
   "avoid_list": [],
   "top_10_recommendations": [
     {
