@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-15 11:04:13",
+  "last_updated": "2026-08-15 12:52:07",
   "market": {
     "confidence_score": 47,
     "spy_status": "跌 (-0.27%)",
@@ -38,21 +38,21 @@
       "price": 225.16,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.62
+      "volume_ratio": 0.63
     },
     {
       "ticker": "MSFT",
       "price": 495.4,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.38
+      "volume_ratio": 0.43
     },
     {
       "ticker": "AMZN",
       "price": 262.65,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.54
+      "volume_ratio": 0.57
     },
     {
       "ticker": "PLTR",
@@ -66,42 +66,42 @@
       "price": 392.99,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.61
+      "volume_ratio": 1.63
     },
     {
       "ticker": "TSLA",
       "price": 342.27,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.13
+      "volume_ratio": 1.14
     },
     {
       "ticker": "AMD",
       "price": 514.39,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.88
+      "volume_ratio": 0.89
     },
     {
       "ticker": "INTC",
       "price": 102.5,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.79
+      "volume_ratio": 0.8
     },
     {
       "ticker": "COST",
       "price": 961.1,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.57
+      "volume_ratio": 0.64
     },
     {
       "ticker": "NFLX",
       "price": 78.16,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.67
+      "volume_ratio": 0.7
     }
   ]
 }
