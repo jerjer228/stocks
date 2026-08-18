@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-18 11:11:00",
+  "last_updated": "2026-08-18 13:03:59",
   "market": {
     "confidence_score": 40,
     "spy_status": "跌 (-0.43%)",
@@ -45,73 +45,73 @@
   "top_10_recommendations": [
     {
       "ticker": "NVDA",
-      "price": 225.01,
+      "price": 225.16,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.68
+      "volume_ratio": 0.63
     },
     {
       "ticker": "MSFT",
-      "price": 480.35,
+      "price": 495.4,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.75
+      "volume_ratio": 0.43
     },
     {
       "ticker": "AMZN",
-      "price": 261.31,
+      "price": 262.65,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.86
+      "volume_ratio": 0.57
     },
     {
       "ticker": "PLTR",
-      "price": 172.55,
+      "price": 174.04,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.52
+      "volume_ratio": 0.51
     },
     {
-      "ticker": "SMCI",
-      "price": 38.28,
-      "score": 70,
+      "ticker": "AVGO",
+      "price": 392.99,
+      "score": 60,
       "signal": "Buy",
-      "volume_ratio": 0.86
+      "volume_ratio": 1.63
     },
     {
       "ticker": "TSLA",
-      "price": 339.3,
+      "price": 342.27,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.65
+      "volume_ratio": 1.14
     },
     {
       "ticker": "AMD",
-      "price": 506.0,
+      "price": 514.39,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.7
+      "volume_ratio": 0.9
     },
     {
       "ticker": "INTC",
-      "price": 103.49,
+      "price": 102.5,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.73
+      "volume_ratio": 0.8
     },
     {
       "ticker": "COST",
-      "price": 953.5,
+      "price": 961.1,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.62
+      "volume_ratio": 0.64
     },
     {
       "ticker": "NFLX",
-      "price": 76.02,
+      "price": 78.16,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.83
+      "volume_ratio": 0.7
     }
   ]
 }
