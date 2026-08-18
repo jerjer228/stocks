@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-19 05:44:39",
+  "last_updated": "2026-08-19 06:53:50",
   "market": {
-    "confidence_score": 22,
-    "spy_status": "跌 (-0.71%)",
-    "qqq_status": "跌 (-1.79%)",
+    "confidence_score": 24,
+    "spy_status": "跌 (-0.74%)",
+    "qqq_status": "跌 (-1.87%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $309.80",
-      "conviction": "80/100"
+      "strategy": "盤前動量 / $309.69",
+      "conviction": "60/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前觀望 / $480.75",
+      "strategy": "盤前觀望 / $480.66",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $343.70",
+      "strategy": "盤前觀望 / $343.65",
       "conviction": "65/100"
     }
   ],
@@ -28,7 +28,7 @@
     {
       "ticker": "AAPL",
       "reason": "盤前強勢領漲",
-      "score": 80
+      "score": 60
     }
   ],
   "avoid_list": [
