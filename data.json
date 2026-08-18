@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-08-18 19:00:21",
+  "last_updated": "2026-08-18 19:57:40",
   "market": {
-    "confidence_score": 34,
-    "spy_status": "跌 (-0.45%)",
-    "qqq_status": "跌 (-1.17%)",
+    "confidence_score": 35,
+    "spy_status": "跌 (-0.41%)",
+    "qqq_status": "跌 (-1.11%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
@@ -15,12 +15,12 @@
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前觀望 / $482.44",
+      "strategy": "盤前觀望 / $483.13",
       "conviction": "65/100"
     },
     {
       "ticker": "AMZN",
-      "strategy": "盤前觀望 / $260.40",
+      "strategy": "盤前觀望 / $260.50",
       "conviction": "65/100"
     }
   ],
