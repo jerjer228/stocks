@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-19 11:14:27",
+  "last_updated": "2026-08-19 13:05:00",
   "market": {
     "confidence_score": 22,
     "spy_status": "跌 (-0.72%)",
@@ -61,14 +61,14 @@
       "price": 481.63,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.63
+      "volume_ratio": 0.64
     },
     {
       "ticker": "AMZN",
       "price": 259.45,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.65
+      "volume_ratio": 0.68
     },
     {
       "ticker": "PLTR",
@@ -89,7 +89,7 @@
       "price": 37.41,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.78
+      "volume_ratio": 0.82
     },
     {
       "ticker": "AVGO",
@@ -103,21 +103,21 @@
       "price": 336.87,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.69
+      "volume_ratio": 0.71
     },
     {
       "ticker": "NFLX",
       "price": 77.77,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.96
+      "volume_ratio": 1.01
     },
     {
       "ticker": "AAPL",
       "price": 310.03,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.89
+      "volume_ratio": 1.02
     }
   ]
 }
