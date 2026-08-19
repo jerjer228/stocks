@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-20 05:00:53",
+  "last_updated": "2026-08-20 06:01:32",
   "market": {
-    "confidence_score": 65,
-    "spy_status": "漲 (+0.25%)",
-    "qqq_status": "漲 (+0.11%)",
+    "confidence_score": 67,
+    "spy_status": "漲 (+0.29%)",
+    "qqq_status": "漲 (+0.14%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $350.02",
+      "strategy": "盤前動量 / $349.92",
       "conviction": "80/100"
     },
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $266.40",
+      "strategy": "盤前動量 / $266.42",
       "conviction": "80/100"
     },
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $316.36",
+      "strategy": "盤前動量 / $316.42",
       "conviction": "80/100"
     }
   ],
