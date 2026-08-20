@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-21 05:59:00",
+  "last_updated": "2026-08-21 07:01:56",
   "market": {
     "confidence_score": 18,
-    "spy_status": "跌 (-0.89%)",
-    "qqq_status": "跌 (-1.04%)",
+    "spy_status": "跌 (-0.90%)",
+    "qqq_status": "跌 (-1.02%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前觀望 / $468.30",
-      "conviction": "65/100"
-    },
-    {
-      "ticker": "NVDA",
-      "strategy": "盤前觀望 / $217.18",
+      "strategy": "盤前觀望 / $468.78",
       "conviction": "65/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前觀望 / $481.16",
+      "strategy": "盤前觀望 / $481.46",
+      "conviction": "65/100"
+    },
+    {
+      "ticker": "META",
+      "strategy": "盤前觀望 / $545.98",
       "conviction": "65/100"
     }
   ],
@@ -48,14 +48,14 @@
       "price": 216.85,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.77
+      "volume_ratio": 0.79
     },
     {
       "ticker": "MSFT",
       "price": 481.15,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.43
+      "volume_ratio": 0.54
     },
     {
       "ticker": "AMZN",
@@ -69,49 +69,49 @@
       "price": 173.96,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.57
+      "volume_ratio": 0.58
     },
     {
       "ticker": "NFLX",
       "price": 80.14,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.74
+      "volume_ratio": 0.79
     },
     {
       "ticker": "SMCI",
       "price": 36.5,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.89
+      "volume_ratio": 0.92
     },
     {
       "ticker": "COST",
       "price": 933.51,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.28
+      "volume_ratio": 1.37
     },
     {
       "ticker": "TSLA",
       "price": 345.13,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.85
+      "volume_ratio": 0.87
     },
     {
       "ticker": "AAPL",
       "price": 311.3,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.72
+      "volume_ratio": 0.77
     },
     {
       "ticker": "AVGO",
       "price": 364.03,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.98
+      "volume_ratio": 1.0
     }
   ]
 }
