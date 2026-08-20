@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-21 07:01:56",
+  "last_updated": "2026-08-21 07:59:57",
   "market": {
     "confidence_score": 18,
-    "spy_status": "跌 (-0.90%)",
-    "qqq_status": "跌 (-1.02%)",
+    "spy_status": "跌 (-0.93%)",
+    "qqq_status": "跌 (-1.10%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前觀望 / $468.78",
-      "conviction": "65/100"
-    },
-    {
-      "ticker": "MSFT",
-      "strategy": "盤前觀望 / $481.46",
+      "strategy": "盤前觀望 / $467.90",
       "conviction": "65/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $545.98",
+      "strategy": "盤前觀望 / $546.00",
+      "conviction": "65/100"
+    },
+    {
+      "ticker": "MSFT",
+      "strategy": "盤前觀望 / $481.11",
       "conviction": "65/100"
     }
   ],
