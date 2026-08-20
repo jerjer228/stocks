@@ -1,7 +1,7 @@
 {
-  "last_updated": "2026-08-20 11:13:29",
+  "last_updated": "2026-08-20 13:06:26",
   "market": {
-    "confidence_score": 67,
+    "confidence_score": 65,
     "spy_status": "漲 (+0.38%)",
     "qqq_status": "漲 (+0.35%)",
     "vix_val": "18.00",
@@ -61,7 +61,7 @@
       "price": 316.83,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.94
+      "volume_ratio": 0.95
     },
     {
       "ticker": "MSFT",
@@ -75,7 +75,7 @@
       "price": 265.84,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.67
+      "volume_ratio": 0.73
     },
     {
       "ticker": "PLTR",
@@ -89,7 +89,7 @@
       "price": 956.99,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.85
+      "volume_ratio": 0.92
     },
     {
       "ticker": "SMCI",
@@ -103,21 +103,21 @@
       "price": 362.48,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.78
+      "volume_ratio": 1.79
     },
     {
       "ticker": "TSLA",
       "price": 351.12,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.9
+      "volume_ratio": 0.93
     },
     {
       "ticker": "NFLX",
       "price": 80.22,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.88
+      "volume_ratio": 0.89
     }
   ]
 }
