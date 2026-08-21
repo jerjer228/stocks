@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-08-21 07:59:57",
+  "last_updated": "2026-08-21 11:32:15",
   "market": {
     "confidence_score": 18,
     "spy_status": "跌 (-0.93%)",
     "qqq_status": "跌 (-1.10%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $546.00",
+      "strategy": "盤前觀望 / $546.20",
       "conviction": "65/100"
     },
     {
