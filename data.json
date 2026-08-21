@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-21 19:02:45",
+  "last_updated": "2026-08-21 20:03:39",
   "market": {
-    "confidence_score": 75,
-    "spy_status": "漲 (+0.28%)",
-    "qqq_status": "漲 (+0.58%)",
+    "confidence_score": 79,
+    "spy_status": "漲 (+0.39%)",
+    "qqq_status": "漲 (+0.66%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $473.05",
+      "strategy": "盤前動量 / $473.97",
       "conviction": "60/100"
     },
     {
-      "ticker": "META",
-      "strategy": "盤前觀望 / $549.82",
+      "ticker": "TSLA",
+      "strategy": "盤前觀望 / $349.25",
       "conviction": "65/100"
     },
     {
-      "ticker": "TSLA",
-      "strategy": "盤前觀望 / $348.41",
+      "ticker": "GOOGL",
+      "strategy": "盤前觀望 / $342.86",
       "conviction": "65/100"
     }
   ],
