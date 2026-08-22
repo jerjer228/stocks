@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-22 11:10:01",
+  "last_updated": "2026-08-22 12:59:42",
   "market": {
     "confidence_score": 81,
     "spy_status": "漲 (+0.54%)",
@@ -48,21 +48,21 @@
       "price": 362.86,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.65
+      "volume_ratio": 1.68
     },
     {
       "ticker": "NVDA",
       "price": 214.72,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.79
+      "volume_ratio": 0.85
     },
     {
       "ticker": "MSFT",
       "price": 483.24,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.6
+      "volume_ratio": 0.61
     },
     {
       "ticker": "PLTR",
@@ -76,7 +76,7 @@
       "price": 79.59,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.68
+      "volume_ratio": 0.7
     },
     {
       "ticker": "SMCI",
@@ -84,6 +84,13 @@
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 0.66
+    },
+    {
+      "ticker": "COST",
+      "price": 947.74,
+      "score": 60,
+      "signal": "Buy",
+      "volume_ratio": 1.27
     },
     {
       "ticker": "QCOM",
@@ -97,7 +104,7 @@
       "price": 309.35,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.8
+      "volume_ratio": 0.88
     },
     {
       "ticker": "AMZN",
@@ -105,13 +112,6 @@
       "score": 30,
       "signal": "Watch",
       "volume_ratio": 0.74
-    },
-    {
-      "ticker": "AVGO",
-      "price": 368.45,
-      "score": 30,
-      "signal": "Watch",
-      "volume_ratio": 0.95
     }
   ]
 }
