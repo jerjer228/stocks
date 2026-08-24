@@ -1,37 +1,37 @@
 {
-  "last_updated": "2026-08-25 06:02:17",
+  "last_updated": "2026-08-25 07:02:33",
   "market": {
     "confidence_score": 35,
-    "spy_status": "跌 (-0.38%)",
-    "qqq_status": "跌 (-1.01%)",
+    "spy_status": "跌 (-0.39%)",
+    "qqq_status": "跌 (-1.06%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
-      "ticker": "META",
-      "strategy": "盤前動量 / $559.29",
+      "ticker": "AMZN",
+      "strategy": "盤前動量 / $262.92",
       "conviction": "60/100"
     },
     {
-      "ticker": "AMZN",
-      "strategy": "盤前動量 / $262.52",
+      "ticker": "META",
+      "strategy": "盤前動量 / $559.24",
       "conviction": "60/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $348.25",
+      "strategy": "盤前觀望 / $348.08",
       "conviction": "65/100"
     }
   ],
   "long_term_picks": [
     {
-      "ticker": "META",
+      "ticker": "AMZN",
       "reason": "盤前強勢領漲",
       "score": 60
     },
     {
-      "ticker": "AMZN",
+      "ticker": "META",
       "reason": "盤前強勢領漲",
       "score": 60
     }
