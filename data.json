@@ -1,37 +1,37 @@
 {
-  "last_updated": "2026-08-25 05:03:22",
+  "last_updated": "2026-08-25 06:02:17",
   "market": {
     "confidence_score": 35,
-    "spy_status": "跌 (-0.40%)",
-    "qqq_status": "跌 (-1.03%)",
+    "spy_status": "跌 (-0.38%)",
+    "qqq_status": "跌 (-1.01%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
-      "ticker": "AMZN",
-      "strategy": "盤前動量 / $262.42",
+      "ticker": "META",
+      "strategy": "盤前動量 / $559.29",
       "conviction": "60/100"
     },
     {
-      "ticker": "META",
-      "strategy": "盤前動量 / $558.88",
+      "ticker": "AMZN",
+      "strategy": "盤前動量 / $262.52",
       "conviction": "60/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $348.02",
+      "strategy": "盤前觀望 / $348.25",
       "conviction": "65/100"
     }
   ],
   "long_term_picks": [
     {
-      "ticker": "AMZN",
+      "ticker": "META",
       "reason": "盤前強勢領漲",
       "score": 60
     },
     {
-      "ticker": "META",
+      "ticker": "AMZN",
       "reason": "盤前強勢領漲",
       "score": 60
     }
@@ -66,7 +66,7 @@
       "price": 175.89,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.58
+      "volume_ratio": 0.74
     },
     {
       "ticker": "COST",
@@ -80,7 +80,7 @@
       "price": 80.01,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.63
+      "volume_ratio": 0.64
     },
     {
       "ticker": "SMCI",
@@ -94,14 +94,14 @@
       "price": 348.95,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.09
+      "volume_ratio": 1.12
     },
     {
       "ticker": "NVDA",
       "price": 208.48,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.15
+      "volume_ratio": 1.16
     },
     {
       "ticker": "AAPL",
@@ -115,14 +115,14 @@
       "price": 262.07,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.56
+      "volume_ratio": 0.59
     },
     {
       "ticker": "AVGO",
       "price": 358.76,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.91
+      "volume_ratio": 0.93
     }
   ]
 }
