@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-25 11:16:52",
+  "last_updated": "2026-08-25 13:18:06",
   "market": {
     "confidence_score": 35,
     "spy_status": "跌 (-0.44%)",
@@ -59,7 +59,7 @@
       "price": 487.31,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.46
+      "volume_ratio": 0.48
     },
     {
       "ticker": "PLTR",
@@ -87,7 +87,7 @@
       "price": 35.17,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.72
+      "volume_ratio": 0.73
     },
     {
       "ticker": "TSLA",
@@ -101,7 +101,7 @@
       "price": 208.48,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.16
+      "volume_ratio": 1.17
     },
     {
       "ticker": "AAPL",
@@ -122,7 +122,7 @@
       "price": 358.76,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.93
+      "volume_ratio": 0.94
     }
   ]
 }
