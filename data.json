@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-25 07:55:34",
+  "last_updated": "2026-08-25 11:16:52",
   "market": {
     "confidence_score": 35,
-    "spy_status": "跌 (-0.46%)",
-    "qqq_status": "跌 (-1.18%)",
+    "spy_status": "跌 (-0.44%)",
+    "qqq_status": "跌 (-1.13%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $560.02",
+      "strategy": "盤前動量 / $560.20",
       "conviction": "60/100"
     },
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $262.65",
+      "strategy": "盤前動量 / $262.60",
       "conviction": "60/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $347.69",
+      "strategy": "盤前觀望 / $347.95",
       "conviction": "65/100"
     }
   ],
