@@ -1,30 +1,36 @@
 {
-  "last_updated": "2026-08-26 16:04:00",
+  "last_updated": "2026-08-26 18:08:50",
   "market": {
-    "confidence_score": 52,
+    "confidence_score": 54,
     "spy_status": "漲 (+0.06%)",
-    "qqq_status": "跌 (-0.04%)",
+    "qqq_status": "跌 (-0.01%)",
     "vix_val": "18.00",
-    "session": "休市 (Closed)"
+    "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $570.02",
-      "conviction": "65/100"
-    },
-    {
-      "ticker": "AAPL",
-      "strategy": "盤前觀望 / $309.77",
-      "conviction": "65/100"
+      "strategy": "盤前動量 / $575.23",
+      "conviction": "60/100"
     },
     {
       "ticker": "AMZN",
-      "strategy": "盤前觀望 / $260.71",
+      "strategy": "盤前觀望 / $261.06",
+      "conviction": "65/100"
+    },
+    {
+      "ticker": "AMD",
+      "strategy": "盤前觀望 / $480.32",
       "conviction": "65/100"
     }
   ],
-  "long_term_picks": [],
+  "long_term_picks": [
+    {
+      "ticker": "META",
+      "reason": "盤前強勢領漲",
+      "score": 60
+    }
+  ],
   "avoid_list": [],
   "top_10_recommendations": [
     {
