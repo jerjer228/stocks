@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-08-29 07:06:12",
+  "last_updated": "2026-08-29 07:21:15",
   "market": {
     "confidence_score": 44,
     "spy_status": "跌 (-0.06%)",
-    "qqq_status": "跌 (-0.37%)",
+    "qqq_status": "跌 (-0.36%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $266.18",
+      "strategy": "盤前動量 / $266.17",
       "conviction": "80/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前動量 / $512.40",
+      "strategy": "盤前動量 / $512.30",
       "conviction": "80/100"
     },
     {
-      "ticker": "GOOGL",
-      "strategy": "盤前動量 / $345.98",
+      "ticker": "AAPL",
+      "strategy": "盤前動量 / $320.05",
       "conviction": "80/100"
     }
   ],
@@ -36,7 +36,7 @@
       "score": 80
     },
     {
-      "ticker": "GOOGL",
+      "ticker": "AAPL",
       "reason": "盤前強勢領漲",
       "score": 80
     }
