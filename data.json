@@ -1,33 +1,33 @@
 {
-  "last_updated": "2026-09-01 17:29:47",
+  "last_updated": "2026-09-01 17:46:20",
   "market": {
-    "confidence_score": 18,
-    "spy_status": "跌 (-0.67%)",
-    "qqq_status": "跌 (-1.03%)",
+    "confidence_score": 20,
+    "spy_status": "跌 (-0.62%)",
+    "qqq_status": "跌 (-0.93%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $316.25",
+      "strategy": "盤前觀望 / $315.88",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $336.80",
+      "strategy": "盤前觀望 / $336.93",
       "conviction": "65/100"
     },
     {
-      "ticker": "AMZN",
-      "strategy": "盤前觀望 / $257.90",
+      "ticker": "NVDA",
+      "strategy": "盤前觀望 / $218.38",
       "conviction": "65/100"
     }
   ],
   "long_term_picks": [],
   "avoid_list": [
     {
-      "ticker": "NVDA",
+      "ticker": "META",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     },
@@ -37,7 +37,7 @@
       "risk_level": "高風險"
     },
     {
-      "ticker": "MSFT",
+      "ticker": "AMD",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     }
