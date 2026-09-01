@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 11:57:23",
+  "last_updated": "2026-09-01 12:15:08",
   "market": {
     "confidence_score": 52,
     "spy_status": "跌 (-0.23%)",
@@ -59,7 +59,7 @@
       "price": 367.95,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.78
+      "volume_ratio": 1.79
     },
     {
       "ticker": "NVDA",
@@ -73,7 +73,7 @@
       "price": 507.29,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.01
+      "volume_ratio": 1.03
     },
     {
       "ticker": "PLTR",
@@ -87,7 +87,7 @@
       "price": 81.05,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.0
+      "volume_ratio": 1.06
     },
     {
       "ticker": "QCOM",
@@ -101,14 +101,14 @@
       "price": 37.28,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.41
+      "volume_ratio": 0.42
     },
     {
       "ticker": "AMZN",
       "price": 259.77,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.26
+      "volume_ratio": 1.28
     },
     {
       "ticker": "COST",
@@ -122,7 +122,7 @@
       "price": 316.85,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.98
+      "volume_ratio": 1.0
     }
   ]
 }
