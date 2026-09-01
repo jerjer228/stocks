@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 19:11:23",
+  "last_updated": "2026-09-01 19:26:50",
   "market": {
     "confidence_score": 20,
     "spy_status": "跌 (-0.61%)",
@@ -10,29 +10,29 @@
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $316.01",
+      "strategy": "盤前觀望 / $316.27",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $337.04",
+      "strategy": "盤前觀望 / $337.25",
       "conviction": "65/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $566.36",
+      "strategy": "盤前觀望 / $566.37",
       "conviction": "65/100"
     }
   ],
   "long_term_picks": [],
   "avoid_list": [
     {
-      "ticker": "TSLA",
+      "ticker": "NVDA",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     },
     {
-      "ticker": "NVDA",
+      "ticker": "TSLA",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     },
