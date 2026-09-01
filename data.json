@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 13:52:56",
+  "last_updated": "2026-09-01 14:15:19",
   "market": {
     "confidence_score": 52,
     "spy_status": "跌 (-0.23%)",
@@ -115,7 +115,7 @@
       "price": 943.89,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.33
+      "volume_ratio": 1.36
     },
     {
       "ticker": "AAPL",
