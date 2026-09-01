@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-01 10:10:43",
+  "last_updated": "2026-09-01 10:26:19",
   "market": {
     "confidence_score": 52,
     "spy_status": "跌 (-0.23%)",
@@ -94,7 +94,7 @@
       "price": 170.48,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.32
+      "volume_ratio": 1.28
     },
     {
       "ticker": "SMCI",
@@ -115,7 +115,7 @@
       "price": 943.89,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.35
+      "volume_ratio": 1.33
     },
     {
       "ticker": "AAPL",
