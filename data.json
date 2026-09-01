@@ -1,33 +1,33 @@
 {
-  "last_updated": "2026-09-01 19:53:01",
+  "last_updated": "2026-09-01 20:15:36",
   "market": {
     "confidence_score": 20,
-    "spy_status": "跌 (-0.57%)",
-    "qqq_status": "跌 (-0.96%)",
+    "spy_status": "跌 (-0.65%)",
+    "qqq_status": "跌 (-1.12%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $316.95",
+      "strategy": "盤前觀望 / $316.62",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $336.88",
+      "strategy": "盤前觀望 / $336.32",
       "conviction": "65/100"
     }
   ],
   "long_term_picks": [],
   "avoid_list": [
     {
-      "ticker": "MSFT",
+      "ticker": "NVDA",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     },
     {
-      "ticker": "NVDA",
+      "ticker": "MSFT",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     },
@@ -78,7 +78,7 @@
       "price": 170.48,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.28
+      "volume_ratio": 1.32
     },
     {
       "ticker": "SMCI",
