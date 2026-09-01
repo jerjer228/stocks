@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-09-02 04:41:23",
+  "last_updated": "2026-09-02 04:53:01",
   "market": {
     "confidence_score": 22,
-    "spy_status": "跌 (-0.74%)",
-    "qqq_status": "跌 (-1.23%)",
+    "spy_status": "跌 (-0.72%)",
+    "qqq_status": "跌 (-1.21%)",
     "vix_val": "18.00",
     "session": "盤中交易 (Regular)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $325.00",
+      "strategy": "盤前動量 / $324.90",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $578.16",
+      "strategy": "盤前動量 / $578.58",
       "conviction": "60/100"
     }
   ],
