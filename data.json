@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-02 07:10:01",
+  "last_updated": "2026-09-02 07:22:36",
   "market": {
-    "confidence_score": 22,
-    "spy_status": "跌 (-0.75%)",
-    "qqq_status": "跌 (-1.25%)",
+    "confidence_score": 20,
+    "spy_status": "跌 (-0.76%)",
+    "qqq_status": "跌 (-1.27%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $324.93",
+      "strategy": "盤前動量 / $324.79",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $577.55",
-      "conviction": "65/100"
+      "strategy": "盤前動量 / $577.72",
+      "conviction": "60/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $337.00",
+      "strategy": "盤前觀望 / $337.02",
       "conviction": "65/100"
     }
   ],
@@ -29,6 +29,11 @@
       "ticker": "AAPL",
       "reason": "盤前強勢領漲",
       "score": 80
+    },
+    {
+      "ticker": "META",
+      "reason": "盤前強勢領漲",
+      "score": 60
     }
   ],
   "avoid_list": [
@@ -103,7 +108,7 @@
       "price": 166.61,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.91
+      "volume_ratio": 0.95
     },
     {
       "ticker": "NVDA",
