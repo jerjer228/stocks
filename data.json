@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-03 00:16:12",
+  "last_updated": "2026-09-03 00:41:26",
   "market": {
-    "confidence_score": 69,
-    "spy_status": "漲 (+0.47%)",
-    "qqq_status": "漲 (+0.15%)",
+    "confidence_score": 67,
+    "spy_status": "漲 (+0.40%)",
+    "qqq_status": "漲 (+0.09%)",
     "vix_val": "18.00",
     "session": "盤中交易 (Regular)"
   },
   "tonight_trades": [
     {
       "ticker": "NVDA",
-      "strategy": "盤前動量 / $227.41",
+      "strategy": "盤前動量 / $226.71",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $593.74",
+      "strategy": "盤前動量 / $593.20",
       "conviction": "80/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $338.26",
+      "strategy": "盤前觀望 / $337.96",
       "conviction": "65/100"
     }
   ],
@@ -46,73 +46,73 @@
   "top_10_recommendations": [
     {
       "ticker": "NVDA",
-      "price": 227.4,
+      "price": 226.71,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.68
-    },
-    {
-      "ticker": "NFLX",
-      "price": 82.07,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.32
-    },
-    {
-      "ticker": "SMCI",
-      "price": 36.37,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.37
-    },
-    {
-      "ticker": "TSLA",
-      "price": 353.92,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.55
-    },
-    {
-      "ticker": "AAPL",
-      "price": 325.15,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.41
-    },
-    {
-      "ticker": "META",
-      "price": 593.74,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.57
-    },
-    {
-      "ticker": "QCOM",
-      "price": 169.86,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.24
+      "volume_ratio": 0.74
     },
     {
       "ticker": "MSFT",
-      "price": 494.03,
-      "score": 30,
+      "price": 494.8,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.29
+    },
+    {
+      "ticker": "NFLX",
+      "price": 82.09,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.34
+    },
+    {
+      "ticker": "SMCI",
+      "price": 36.28,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.38
+    },
+    {
+      "ticker": "TSLA",
+      "price": 352.6,
+      "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.27
+      "volume_ratio": 0.58
+    },
+    {
+      "ticker": "AAPL",
+      "price": 325.3,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.45
+    },
+    {
+      "ticker": "META",
+      "price": 593.2,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.59
+    },
+    {
+      "ticker": "QCOM",
+      "price": 168.93,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.26
     },
     {
       "ticker": "AMZN",
-      "price": 254.77,
+      "price": 255.03,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.32
+      "volume_ratio": 0.35
     },
     {
       "ticker": "PLTR",
-      "price": 165.74,
+      "price": 168.55,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.59
+      "volume_ratio": 0.68
     }
   ]
 }
