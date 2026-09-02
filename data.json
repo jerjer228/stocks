@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-02 15:18:08",
+  "last_updated": "2026-09-02 15:40:28",
   "market": {
     "confidence_score": 20,
     "spy_status": "跌 (-0.73%)",
@@ -103,7 +103,7 @@
       "price": 166.61,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.92
+      "volume_ratio": 0.96
     },
     {
       "ticker": "NVDA",
