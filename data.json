@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-03 06:42:15",
+  "last_updated": "2026-09-03 06:53:04",
   "market": {
     "confidence_score": 69,
-    "spy_status": "漲 (+0.43%)",
-    "qqq_status": "漲 (+0.25%)",
+    "spy_status": "漲 (+0.40%)",
+    "qqq_status": "漲 (+0.17%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "NVDA",
-      "strategy": "盤前動量 / $225.15",
+      "strategy": "盤前動量 / $225.02",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $596.00",
+      "strategy": "盤前動量 / $595.93",
       "conviction": "80/100"
     },
     {
-      "ticker": "TSLA",
-      "strategy": "盤前觀望 / $357.10",
+      "ticker": "GOOGL",
+      "strategy": "盤前觀望 / $338.18",
       "conviction": "65/100"
     }
   ],
