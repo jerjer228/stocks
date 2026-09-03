@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-09-04 07:23:49",
+  "last_updated": "2026-09-04 07:38:13",
   "market": {
-    "confidence_score": 89,
+    "confidence_score": 87,
     "spy_status": "漲 (+0.96%)",
-    "qqq_status": "漲 (+1.06%)",
+    "qqq_status": "漲 (+1.05%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
@@ -15,12 +15,12 @@
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $613.34",
+      "strategy": "盤前動量 / $614.50",
       "conviction": "80/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前動量 / $509.49",
+      "strategy": "盤前動量 / $509.58",
       "conviction": "80/100"
     }
   ],
