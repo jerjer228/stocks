@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-03 19:53:05",
+  "last_updated": "2026-09-03 20:16:16",
   "market": {
-    "confidence_score": 45,
-    "spy_status": "跌 (-0.07%)",
-    "qqq_status": "跌 (-0.28%)",
+    "confidence_score": 47,
+    "spy_status": "跌 (-0.02%)",
+    "qqq_status": "跌 (-0.24%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $361.48",
-      "conviction": "60/100"
+      "strategy": "盤前動量 / $363.10",
+      "conviction": "80/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前觀望 / $499.50",
+      "strategy": "盤前觀望 / $499.93",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $338.05",
+      "strategy": "盤前觀望 / $338.14",
       "conviction": "65/100"
     }
   ],
@@ -28,7 +28,7 @@
     {
       "ticker": "TSLA",
       "reason": "盤前強勢領漲",
-      "score": 60
+      "score": 80
     }
   ],
   "avoid_list": [],
