@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-04 05:40:31",
+  "last_updated": "2026-09-04 05:50:58",
   "market": {
     "confidence_score": 87,
-    "spy_status": "漲 (+0.94%)",
-    "qqq_status": "漲 (+1.07%)",
+    "spy_status": "漲 (+0.96%)",
+    "qqq_status": "漲 (+1.09%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $378.40",
+      "strategy": "盤前動量 / $375.00",
       "conviction": "80/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前動量 / $509.63",
+      "strategy": "盤前動量 / $509.75",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $611.11",
+      "strategy": "盤前動量 / $611.42",
       "conviction": "80/100"
     }
   ],
@@ -55,21 +55,21 @@
       "price": 228.45,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.03
+      "volume_ratio": 1.05
     },
     {
       "ticker": "MSFT",
       "price": 510.12,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.01
+      "volume_ratio": 1.02
     },
     {
       "ticker": "META",
       "price": 610.68,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.2
+      "volume_ratio": 1.25
     },
     {
       "ticker": "PLTR",
@@ -83,7 +83,7 @@
       "price": 82.67,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.87
+      "volume_ratio": 0.88
     },
     {
       "ticker": "SMCI",
@@ -97,7 +97,7 @@
       "price": 925.41,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.23
+      "volume_ratio": 1.25
     },
     {
       "ticker": "AAPL",
