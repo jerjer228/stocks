@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-04 05:26:33",
+  "last_updated": "2026-09-04 05:40:31",
   "market": {
     "confidence_score": 87,
-    "spy_status": "漲 (+0.95%)",
-    "qqq_status": "漲 (+1.05%)",
+    "spy_status": "漲 (+0.94%)",
+    "qqq_status": "漲 (+1.07%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $377.67",
+      "strategy": "盤前動量 / $378.40",
       "conviction": "80/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前動量 / $509.53",
+      "strategy": "盤前動量 / $509.63",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $610.61",
+      "strategy": "盤前動量 / $611.11",
       "conviction": "80/100"
     }
   ],
