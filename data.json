@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-05 05:51:03",
+  "last_updated": "2026-09-05 06:11:05",
   "market": {
-    "confidence_score": 50,
-    "spy_status": "跌 (-0.39%)",
+    "confidence_score": 48,
+    "spy_status": "跌 (-0.43%)",
     "qqq_status": "漲 (+0.12%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
@@ -10,17 +10,17 @@
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $476.36",
+      "strategy": "盤前動量 / $476.25",
       "conviction": "80/100"
     },
     {
-      "ticker": "META",
-      "strategy": "盤前觀望 / $615.11",
+      "ticker": "NVDA",
+      "strategy": "盤前觀望 / $230.05",
       "conviction": "65/100"
     },
     {
-      "ticker": "NVDA",
-      "strategy": "盤前觀望 / $230.08",
+      "ticker": "META",
+      "strategy": "盤前觀望 / $614.56",
       "conviction": "65/100"
     }
   ],
