@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-04 10:11:34",
+  "last_updated": "2026-09-04 10:27:22",
   "market": {
     "confidence_score": 87,
     "spy_status": "漲 (+0.96%)",
@@ -108,7 +108,7 @@
     },
     {
       "ticker": "QCOM",
-      "price": 169.96,
+      "price": 169.04,
       "score": 40,
       "signal": "Watch",
       "volume_ratio": 0.82
