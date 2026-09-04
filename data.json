@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-05 04:52:05",
+  "last_updated": "2026-09-05 05:11:00",
   "market": {
-    "confidence_score": 48,
-    "spy_status": "跌 (-0.44%)",
+    "confidence_score": 50,
+    "spy_status": "跌 (-0.41%)",
     "qqq_status": "漲 (+0.13%)",
     "vix_val": "18.00",
-    "session": "盤中交易 (Regular)"
+    "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $476.20",
+      "strategy": "盤前動量 / $476.36",
       "conviction": "80/100"
-    },
-    {
-      "ticker": "META",
-      "strategy": "盤前觀望 / $614.96",
-      "conviction": "65/100"
     },
     {
       "ticker": "NVDA",
       "strategy": "盤前觀望 / $229.99",
+      "conviction": "65/100"
+    },
+    {
+      "ticker": "META",
+      "strategy": "盤前觀望 / $614.73",
       "conviction": "65/100"
     }
   ],
@@ -61,7 +61,7 @@
       "price": 230.36,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.02
+      "volume_ratio": 1.03
     },
     {
       "ticker": "MSFT",
@@ -82,14 +82,14 @@
       "price": 78.25,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.41
+      "volume_ratio": 1.42
     },
     {
       "ticker": "AAPL",
       "price": 319.97,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.96
+      "volume_ratio": 0.97
     },
     {
       "ticker": "META",
@@ -103,14 +103,14 @@
       "price": 477.57,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.1
+      "volume_ratio": 1.11
     },
     {
       "ticker": "INTC",
       "price": 95.8,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.97
+      "volume_ratio": 0.99
     },
     {
       "ticker": "QCOM",
