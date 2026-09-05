@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05 09:51:42",
+  "last_updated": "2026-09-05 10:11:27",
   "market": {
     "confidence_score": 55,
     "spy_status": "跌 (-0.41%)",
@@ -51,73 +51,73 @@
   "top_10_recommendations": [
     {
       "ticker": "TSLA",
-      "price": 376.37,
+      "price": 354.08,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.73
+      "volume_ratio": 1.71
     },
     {
       "ticker": "NVDA",
-      "price": 228.45,
+      "price": 230.36,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.06
+      "volume_ratio": 1.05
     },
     {
       "ticker": "MSFT",
-      "price": 510.12,
+      "price": 499.7,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.03
-    },
-    {
-      "ticker": "META",
-      "price": 610.68,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 1.25
-    },
-    {
-      "ticker": "PLTR",
-      "price": 182.53,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 1.07
-    },
-    {
-      "ticker": "NFLX",
-      "price": 82.67,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.88
+      "volume_ratio": 0.79
     },
     {
       "ticker": "SMCI",
-      "price": 37.87,
+      "price": 39.59,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.64
+      "volume_ratio": 0.98
     },
     {
-      "ticker": "COST",
-      "price": 925.41,
+      "ticker": "NFLX",
+      "price": 78.25,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.25
+      "volume_ratio": 1.43
     },
     {
       "ticker": "AAPL",
-      "price": 328.21,
+      "price": 319.97,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.94
+      "volume_ratio": 1.0
+    },
+    {
+      "ticker": "META",
+      "price": 616.77,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 1.0
+    },
+    {
+      "ticker": "AMD",
+      "price": 477.57,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 1.12
+    },
+    {
+      "ticker": "INTC",
+      "price": 95.8,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 1.0
     },
     {
       "ticker": "QCOM",
-      "price": 168.57,
+      "price": 168.74,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.76
+      "volume_ratio": 0.94
     }
   ]
 }
