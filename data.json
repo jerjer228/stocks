@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-09 09:28:44",
+  "last_updated": "2026-09-09 09:44:54",
   "market": {
     "confidence_score": 32,
     "spy_status": "跌 (-0.54%)",
@@ -56,73 +56,73 @@
   "top_10_recommendations": [
     {
       "ticker": "TSLA",
-      "price": 354.08,
+      "price": 368.16,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.71
+      "volume_ratio": 1.3
     },
     {
       "ticker": "NVDA",
-      "price": 230.36,
+      "price": 225.73,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.05
-    },
-    {
-      "ticker": "MSFT",
-      "price": 499.7,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.79
-    },
-    {
-      "ticker": "SMCI",
-      "price": 39.59,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.98
-    },
-    {
-      "ticker": "NFLX",
-      "price": 78.25,
-      "score": 60,
-      "signal": "Buy",
-      "volume_ratio": 1.43
-    },
-    {
-      "ticker": "AAPL",
-      "price": 319.97,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 1.0
-    },
-    {
-      "ticker": "META",
-      "price": 616.77,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 1.0
+      "volume_ratio": 0.95
     },
     {
       "ticker": "AMD",
-      "price": 477.57,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 1.12
+      "price": 505.74,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.57
     },
     {
       "ticker": "INTC",
-      "price": 95.8,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 1.0
+      "price": 104.47,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.4
     },
     {
       "ticker": "QCOM",
-      "price": 168.74,
+      "price": 174.09,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 2.62
+    },
+    {
+      "ticker": "ARM",
+      "price": 261.53,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.37
+    },
+    {
+      "ticker": "SMCI",
+      "price": 40.26,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.78
+    },
+    {
+      "ticker": "COST",
+      "price": 910.18,
+      "score": 60,
+      "signal": "Buy",
+      "volume_ratio": 1.24
+    },
+    {
+      "ticker": "AAPL",
+      "price": 316.22,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.94
+      "volume_ratio": 0.9
+    },
+    {
+      "ticker": "META",
+      "price": 613.48,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 1.16
     }
   ]
 }
