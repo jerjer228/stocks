@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-09-10 04:12:06",
+  "last_updated": "2026-09-10 04:29:18",
   "market": {
     "confidence_score": 38,
-    "spy_status": "跌 (-0.37%)",
+    "spy_status": "跌 (-0.38%)",
     "qqq_status": "跌 (-0.16%)",
     "vix_val": "18.00",
     "session": "盤中交易 (Regular)"
@@ -10,17 +10,17 @@
   "tonight_trades": [
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $652.21",
+      "strategy": "盤前動量 / $651.24",
       "conviction": "80/100"
     },
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $521.02",
+      "strategy": "盤前動量 / $521.09",
       "conviction": "80/100"
     },
     {
       "ticker": "TSLA",
-      "strategy": "盤前觀望 / $367.46",
+      "strategy": "盤前觀望 / $367.49",
       "conviction": "65/100"
     }
   ],
@@ -54,70 +54,70 @@
       "price": 223.67,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.59
+      "volume_ratio": 0.62
     },
     {
       "ticker": "AAPL",
       "price": 315.34,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.56
+      "volume_ratio": 1.59
     },
     {
       "ticker": "META",
       "price": 653.69,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 2.0
+      "volume_ratio": 2.04
     },
     {
       "ticker": "AMD",
       "price": 521.09,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.2
+      "volume_ratio": 1.21
+    },
+    {
+      "ticker": "QCOM",
+      "price": 176.4,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.42
     },
     {
       "ticker": "SMCI",
       "price": 38.93,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.58
+      "volume_ratio": 0.6
     },
     {
       "ticker": "TSLA",
       "price": 367.81,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.8
+      "volume_ratio": 0.81
     },
     {
       "ticker": "INTC",
       "price": 106.24,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.98
-    },
-    {
-      "ticker": "QCOM",
-      "price": 176.4,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 1.16
+      "volume_ratio": 0.99
     },
     {
       "ticker": "ARM",
       "price": 264.23,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.87
+      "volume_ratio": 0.88
     },
     {
       "ticker": "MSFT",
       "price": 491.65,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.54
+      "volume_ratio": 0.58
     }
   ]
 }
