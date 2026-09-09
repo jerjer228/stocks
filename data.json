@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-10 07:25:42",
+  "last_updated": "2026-09-10 07:39:28",
   "market": {
     "confidence_score": 38,
     "spy_status": "跌 (-0.35%)",
@@ -10,17 +10,17 @@
   "tonight_trades": [
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $649.12",
+      "strategy": "盤前動量 / $649.15",
       "conviction": "80/100"
     },
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $520.25",
+      "strategy": "盤前動量 / $519.90",
       "conviction": "80/100"
     },
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $317.60",
+      "strategy": "盤前觀望 / $318.01",
       "conviction": "65/100"
     }
   ],
