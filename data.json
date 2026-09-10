@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-09-11 04:53:15",
+  "last_updated": "2026-09-11 05:10:28",
   "market": {
     "confidence_score": 16,
-    "spy_status": "跌 (-0.61%)",
-    "qqq_status": "跌 (-1.05%)",
+    "spy_status": "跌 (-0.64%)",
+    "qqq_status": "跌 (-1.02%)",
     "vix_val": "18.00",
-    "session": "盤中交易 (Regular)"
+    "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $326.04",
+      "strategy": "盤前動量 / $325.88",
       "conviction": "80/100"
     },
     {
@@ -19,8 +19,8 @@
       "conviction": "65/100"
     },
     {
-      "ticker": "MSFT",
-      "strategy": "盤前觀望 / $492.32",
+      "ticker": "AMZN",
+      "strategy": "盤前觀望 / $251.91",
       "conviction": "65/100"
     }
   ],
@@ -49,14 +49,14 @@
       "price": 326.57,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.65
+      "volume_ratio": 1.66
     },
     {
       "ticker": "QCOM",
       "price": 176.88,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.44
+      "volume_ratio": 1.45
     },
     {
       "ticker": "TSLA",
@@ -84,14 +84,14 @@
       "price": 100.32,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.02
+      "volume_ratio": 1.03
     },
     {
       "ticker": "ARM",
       "price": 254.18,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.98
+      "volume_ratio": 0.99
     },
     {
       "ticker": "NVDA",
@@ -105,14 +105,14 @@
       "price": 492.44,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.73
+      "volume_ratio": 0.75
     },
     {
       "ticker": "AMZN",
       "price": 251.89,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.77
+      "volume_ratio": 0.79
     }
   ]
 }
