@@ -1,30 +1,36 @@
 {
-  "last_updated": "2026-09-11 00:12:14",
+  "last_updated": "2026-09-11 00:28:32",
   "market": {
     "confidence_score": 18,
     "spy_status": "跌 (-0.68%)",
-    "qqq_status": "跌 (-0.97%)",
+    "qqq_status": "跌 (-0.98%)",
     "vix_val": "18.00",
     "session": "盤中交易 (Regular)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $320.06",
+      "strategy": "盤前動量 / $321.45",
+      "conviction": "60/100"
+    },
+    {
+      "ticker": "MSFT",
+      "strategy": "盤前觀望 / $492.97",
       "conviction": "65/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $651.37",
-      "conviction": "65/100"
-    },
-    {
-      "ticker": "AMZN",
-      "strategy": "盤前觀望 / $252.49",
+      "strategy": "盤前觀望 / $650.52",
       "conviction": "65/100"
     }
   ],
-  "long_term_picks": [],
+  "long_term_picks": [
+    {
+      "ticker": "AAPL",
+      "reason": "盤前強勢領漲",
+      "score": 60
+    }
+  ],
   "avoid_list": [
     {
       "ticker": "NVDA",
@@ -40,73 +46,73 @@
   "top_10_recommendations": [
     {
       "ticker": "SMCI",
-      "price": 38.31,
+      "price": 38.22,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.31
+      "volume_ratio": 0.33
     },
     {
       "ticker": "TSLA",
-      "price": 366.16,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.41
-    },
-    {
-      "ticker": "AAPL",
-      "price": 320.16,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.8
-    },
-    {
-      "ticker": "META",
-      "price": 651.37,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.63
-    },
-    {
-      "ticker": "AMD",
-      "price": 504.57,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.44
-    },
-    {
-      "ticker": "INTC",
-      "price": 100.86,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.58
-    },
-    {
-      "ticker": "QCOM",
-      "price": 178.71,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.55
-    },
-    {
-      "ticker": "ARM",
-      "price": 254.16,
+      "price": 365.85,
       "score": 40,
       "signal": "Watch",
       "volume_ratio": 0.43
     },
     {
+      "ticker": "AAPL",
+      "price": 321.44,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.84
+    },
+    {
+      "ticker": "META",
+      "price": 650.52,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.65
+    },
+    {
+      "ticker": "AMD",
+      "price": 503.55,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.47
+    },
+    {
+      "ticker": "INTC",
+      "price": 100.87,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.6
+    },
+    {
+      "ticker": "QCOM",
+      "price": 179.14,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.58
+    },
+    {
+      "ticker": "ARM",
+      "price": 253.99,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.45
+    },
+    {
       "ticker": "NVDA",
-      "price": 218.61,
+      "price": 217.74,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.4
+      "volume_ratio": 0.42
     },
     {
       "ticker": "MSFT",
-      "price": 491.73,
+      "price": 492.96,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.25
+      "volume_ratio": 0.27
     }
   ]
 }
