@@ -1,9 +1,9 @@
 {
-  "last_updated": "2026-09-11 06:10:50",
+  "last_updated": "2026-09-11 06:25:06",
   "market": {
     "confidence_score": 16,
-    "spy_status": "跌 (-0.63%)",
-    "qqq_status": "跌 (-1.06%)",
+    "spy_status": "跌 (-0.61%)",
+    "qqq_status": "跌 (-1.08%)",
     "vix_val": "18.00",
     "session": "盤後交易 (After-Hours)"
   },
@@ -15,12 +15,12 @@
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $331.83",
+      "strategy": "盤前觀望 / $331.80",
       "conviction": "65/100"
     },
     {
       "ticker": "AMZN",
-      "strategy": "盤前觀望 / $252.20",
+      "strategy": "盤前觀望 / $252.13",
       "conviction": "65/100"
     }
   ],
