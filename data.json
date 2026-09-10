@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-10 21:11:57",
+  "last_updated": "2026-09-10 21:28:05",
   "market": {
-    "confidence_score": 24,
-    "spy_status": "跌 (-0.59%)",
-    "qqq_status": "跌 (-1.24%)",
+    "confidence_score": 22,
+    "spy_status": "跌 (-0.68%)",
+    "qqq_status": "跌 (-1.29%)",
     "vix_val": "18.00",
     "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $651.37",
+      "strategy": "盤前觀望 / $653.29",
       "conviction": "65/100"
     },
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $317.25",
+      "strategy": "盤前觀望 / $316.45",
       "conviction": "65/100"
     },
     {
-      "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $328.65",
+      "ticker": "MSFT",
+      "strategy": "盤前觀望 / $488.15",
       "conviction": "65/100"
     }
   ],
