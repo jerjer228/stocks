@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-09-11 16:31:30",
+  "last_updated": "2026-09-11 16:54:59",
   "market": {
     "confidence_score": 85,
-    "spy_status": "漲 (+0.59%)",
-    "qqq_status": "漲 (+0.84%)",
+    "spy_status": "漲 (+0.65%)",
+    "qqq_status": "漲 (+0.87%)",
     "vix_val": "18.00",
     "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $508.09",
+      "strategy": "盤前動量 / $509.10",
       "conviction": "60/100"
     },
     {
@@ -20,7 +20,7 @@
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $648.00",
+      "strategy": "盤前動量 / $647.98",
       "conviction": "60/100"
     }
   ],
