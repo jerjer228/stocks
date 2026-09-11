@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-12 04:35:10",
+  "last_updated": "2026-09-12 06:48:14",
   "market": {
     "confidence_score": 91,
-    "spy_status": "漲 (+0.93%)",
-    "qqq_status": "漲 (+1.14%)",
+    "spy_status": "漲 (+0.97%)",
+    "qqq_status": "漲 (+1.19%)",
     "vix_val": "18.00",
-    "session": "盤中交易 (Regular)"
+    "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $515.10",
-      "conviction": "80/100"
-    },
-    {
-      "ticker": "GOOGL",
-      "strategy": "盤前動量 / $338.24",
+      "strategy": "盤前動量 / $515.50",
       "conviction": "80/100"
     },
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $256.63",
+      "strategy": "盤前動量 / $256.79",
+      "conviction": "80/100"
+    },
+    {
+      "ticker": "GOOGL",
+      "strategy": "盤前動量 / $338.37",
       "conviction": "80/100"
     }
   ],
@@ -31,12 +31,12 @@
       "score": 80
     },
     {
-      "ticker": "GOOGL",
+      "ticker": "AMZN",
       "reason": "盤前強勢領漲",
       "score": 80
     },
     {
-      "ticker": "AMZN",
+      "ticker": "GOOGL",
       "reason": "盤前強勢領漲",
       "score": 80
     }
@@ -55,7 +55,7 @@
       "price": 495.63,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.66
+      "volume_ratio": 0.69
     },
     {
       "ticker": "SMCI",
@@ -69,14 +69,14 @@
       "price": 332.27,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.18
+      "volume_ratio": 1.19
     },
     {
       "ticker": "META",
       "price": 648.03,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.87
+      "volume_ratio": 0.94
     },
     {
       "ticker": "AMD",
@@ -90,14 +90,14 @@
       "price": 102.94,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.93
+      "volume_ratio": 0.95
     },
     {
       "ticker": "QCOM",
       "price": 181.97,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.02
+      "volume_ratio": 1.05
     },
     {
       "ticker": "ARM",
@@ -111,7 +111,7 @@
       "price": 218.29,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.67
+      "volume_ratio": 0.68
     }
   ]
 }
