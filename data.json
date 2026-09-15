@@ -1,21 +1,21 @@
 {
-  "last_updated": "2026-09-15 07:29:49",
+  "last_updated": "2026-09-15 09:50:03",
   "market": {
-    "confidence_score": 30,
-    "spy_status": "跌 (-0.45%)",
-    "qqq_status": "跌 (-0.75%)",
+    "confidence_score": 32,
+    "spy_status": "跌 (-0.44%)",
+    "qqq_status": "跌 (-0.74%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "GOOGL",
-      "strategy": "盤前動量 / $347.28",
+      "strategy": "盤前動量 / $347.47",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $664.60",
+      "strategy": "盤前動量 / $664.88",
       "conviction": "80/100"
     },
     {
@@ -78,7 +78,7 @@
       "price": 349.39,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.48
+      "volume_ratio": 1.51
     },
     {
       "ticker": "AMD",
@@ -92,7 +92,7 @@
       "price": 80.32,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.12
+      "volume_ratio": 1.13
     },
     {
       "ticker": "QCOM",
@@ -106,7 +106,7 @@
       "price": 333.08,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.9
+      "volume_ratio": 0.91
     },
     {
       "ticker": "META",
