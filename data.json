@@ -1,32 +1,42 @@
 {
-  "last_updated": "2026-09-19 01:41:21",
+  "last_updated": "2026-09-19 03:58:42",
   "market": {
-    "confidence_score": 46,
-    "spy_status": "跌 (-0.32%)",
-    "qqq_status": "漲 (+0.22%)",
+    "confidence_score": 58,
+    "spy_status": "跌 (-0.08%)",
+    "qqq_status": "漲 (+0.76%)",
     "vix_val": "18.00",
     "session": "盤中交易 (Regular)"
   },
   "tonight_trades": [
     {
+      "ticker": "AMD",
+      "strategy": "盤前動量 / $559.82",
+      "conviction": "80/100"
+    },
+    {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $253.03",
+      "strategy": "盤前動量 / $253.65",
       "conviction": "60/100"
     },
     {
-      "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $349.55",
-      "conviction": "65/100"
-    },
-    {
       "ticker": "NVDA",
-      "strategy": "盤前觀望 / $219.80",
-      "conviction": "65/100"
+      "strategy": "盤前動量 / $221.78",
+      "conviction": "60/100"
     }
   ],
   "long_term_picks": [
     {
+      "ticker": "AMD",
+      "reason": "盤前強勢領漲",
+      "score": 80
+    },
+    {
       "ticker": "AMZN",
+      "reason": "盤前強勢領漲",
+      "score": 60
+    },
+    {
+      "ticker": "NVDA",
       "reason": "盤前強勢領漲",
       "score": 60
     }
@@ -40,74 +50,74 @@
   ],
   "top_10_recommendations": [
     {
+      "ticker": "QCOM",
+      "price": 177.72,
+      "score": 100,
+      "signal": "Strong Buy",
+      "volume_ratio": 1.27
+    },
+    {
       "ticker": "TSLA",
-      "price": 363.0,
+      "price": 364.67,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.79
+      "volume_ratio": 1.02
     },
     {
       "ticker": "NVDA",
-      "price": 219.8,
+      "price": 221.77,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.5
+      "volume_ratio": 0.7
     },
     {
       "ticker": "AAPL",
-      "price": 335.43,
+      "price": 335.91,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.63
+      "volume_ratio": 0.83
     },
     {
       "ticker": "META",
-      "price": 671.19,
+      "price": 664.92,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.8
-    },
-    {
-      "ticker": "QCOM",
-      "price": 178.2,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.89
-    },
-    {
-      "ticker": "SMCI",
-      "price": 38.92,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.71
-    },
-    {
-      "ticker": "NFLX",
-      "price": 71.78,
-      "score": 60,
-      "signal": "Buy",
-      "volume_ratio": 1.65
+      "volume_ratio": 1.03
     },
     {
       "ticker": "GOOGL",
-      "price": 349.57,
-      "score": 40,
-      "signal": "Watch",
+      "price": 348.71,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.21
+    },
+    {
+      "ticker": "PLTR",
+      "price": 177.62,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.72
+    },
+    {
+      "ticker": "SMCI",
+      "price": 39.13,
+      "score": 70,
+      "signal": "Buy",
       "volume_ratio": 0.96
     },
     {
-      "ticker": "AMD",
-      "price": 545.95,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.73
+      "ticker": "NFLX",
+      "price": 71.75,
+      "score": 60,
+      "signal": "Buy",
+      "volume_ratio": 2.11
     },
     {
-      "ticker": "INTC",
-      "price": 107.13,
+      "ticker": "AMD",
+      "price": 559.8,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.7
+      "volume_ratio": 1.05
     }
   ]
 }
