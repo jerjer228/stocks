@@ -1,42 +1,32 @@
 {
-  "last_updated": "2026-09-18 13:14:01",
+  "last_updated": "2026-09-18 17:50:35",
   "market": {
-    "confidence_score": 79,
-    "spy_status": "漲 (+0.44%)",
-    "qqq_status": "漲 (+0.89%)",
+    "confidence_score": 72,
+    "spy_status": "漲 (+0.01%)",
+    "qqq_status": "漲 (+0.52%)",
     "vix_val": "18.00",
-    "session": "休市 (Closed)"
+    "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
-      "ticker": "AMD",
-      "strategy": "盤前動量 / $545.00",
+      "ticker": "GOOGL",
+      "strategy": "盤前動量 / $354.00",
       "conviction": "80/100"
+    },
+    {
+      "ticker": "AMD",
+      "strategy": "盤前觀望 / $549.74",
+      "conviction": "65/100"
     },
     {
       "ticker": "NVDA",
-      "strategy": "盤前動量 / $219.23",
-      "conviction": "80/100"
-    },
-    {
-      "ticker": "TSLA",
-      "strategy": "盤前動量 / $365.65",
-      "conviction": "80/100"
+      "strategy": "盤前觀望 / $220.75",
+      "conviction": "65/100"
     }
   ],
   "long_term_picks": [
     {
-      "ticker": "AMD",
-      "reason": "盤前強勢領漲",
-      "score": 80
-    },
-    {
-      "ticker": "NVDA",
-      "reason": "盤前強勢領漲",
-      "score": 80
-    },
-    {
-      "ticker": "TSLA",
+      "ticker": "GOOGL",
       "reason": "盤前強勢領漲",
       "score": 80
     }
