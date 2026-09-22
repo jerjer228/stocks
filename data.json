@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-22 09:01:42",
+  "last_updated": "2026-09-22 14:14:33",
   "market": {
     "confidence_score": 82,
     "spy_status": "漲 (+1.43%)",
@@ -44,74 +44,74 @@
   "avoid_list": [],
   "top_10_recommendations": [
     {
-      "ticker": "TSLA",
-      "price": 364.27,
+      "ticker": "MSFT",
+      "price": 501.61,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.28
+      "volume_ratio": 1.31
     },
     {
-      "ticker": "NVDA",
-      "price": 222.27,
+      "ticker": "AMZN",
+      "price": 258.45,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.41
-    },
-    {
-      "ticker": "AAPL",
-      "price": 336.13,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.99
+      "volume_ratio": 1.29
     },
     {
       "ticker": "META",
-      "price": 665.75,
+      "price": 741.25,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.48
+      "volume_ratio": 2.38
     },
     {
-      "ticker": "PLTR",
-      "price": 177.64,
+      "ticker": "AMD",
+      "price": 615.52,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.36
+      "volume_ratio": 2.15
+    },
+    {
+      "ticker": "INTC",
+      "price": 121.78,
+      "score": 100,
+      "signal": "Strong Buy",
+      "volume_ratio": 1.85
     },
     {
       "ticker": "QCOM",
-      "price": 177.72,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 3.88
-    },
-    {
-      "ticker": "SMCI",
-      "price": 39.09,
+      "price": 194.23,
       "score": 100,
       "signal": "Strong Buy",
       "volume_ratio": 1.27
     },
     {
-      "ticker": "GOOGL",
-      "price": 349.54,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 1.87
+      "ticker": "SMCI",
+      "price": 41.2,
+      "score": 100,
+      "signal": "Strong Buy",
+      "volume_ratio": 1.25
     },
     {
-      "ticker": "AMD",
-      "price": 559.82,
+      "ticker": "TSLA",
+      "price": 375.3,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.67
+      "volume_ratio": 0.93
     },
     {
-      "ticker": "INTC",
-      "price": 108.6,
+      "ticker": "NVDA",
+      "price": 227.38,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.78
+      "volume_ratio": 0.81
+    },
+    {
+      "ticker": "AAPL",
+      "price": 338.98,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.82
     }
   ]
 }
