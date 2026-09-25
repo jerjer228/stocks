@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-26 04:39:54",
+  "last_updated": "2026-09-26 07:34:55",
   "market": {
     "confidence_score": 89,
-    "spy_status": "漲 (+0.71%)",
-    "qqq_status": "漲 (+0.76%)",
+    "spy_status": "漲 (+0.84%)",
+    "qqq_status": "漲 (+0.82%)",
     "vix_val": "18.00",
-    "session": "盤中交易 (Regular)"
+    "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "MSFT",
-      "strategy": "盤前動量 / $517.40",
+      "strategy": "盤前動量 / $517.71",
       "conviction": "80/100"
     },
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $341.00",
+      "strategy": "盤前動量 / $341.50",
       "conviction": "80/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $344.07",
+      "strategy": "盤前觀望 / $344.17",
       "conviction": "65/100"
     }
   ],
@@ -61,7 +61,7 @@
       "price": 201.97,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.21
+      "volume_ratio": 1.22
     },
     {
       "ticker": "ARM",
@@ -82,14 +82,14 @@
       "price": 372.11,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.12
+      "volume_ratio": 1.13
     },
     {
       "ticker": "NVDA",
       "price": 225.07,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.75
+      "volume_ratio": 0.76
     },
     {
       "ticker": "AAPL",
@@ -103,14 +103,14 @@
       "price": 751.66,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.11
+      "volume_ratio": 1.12
     },
     {
       "ticker": "AMD",
       "price": 630.63,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.8
+      "volume_ratio": 0.81
     },
     {
       "ticker": "PLTR",
