@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-09-26 07:34:55",
+  "last_updated": "2026-09-26 10:01:09",
   "market": {
     "confidence_score": 89,
-    "spy_status": "漲 (+0.84%)",
-    "qqq_status": "漲 (+0.82%)",
+    "spy_status": "漲 (+0.80%)",
+    "qqq_status": "漲 (+0.81%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "MSFT",
-      "strategy": "盤前動量 / $517.71",
+      "strategy": "盤前動量 / $517.89",
       "conviction": "80/100"
     },
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $341.50",
+      "strategy": "盤前動量 / $341.46",
       "conviction": "80/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $344.17",
+      "strategy": "盤前觀望 / $344.00",
       "conviction": "65/100"
     }
   ],
@@ -54,7 +54,7 @@
       "price": 516.17,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.74
+      "volume_ratio": 1.75
     },
     {
       "ticker": "QCOM",
@@ -75,28 +75,28 @@
       "price": 43.26,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.29
+      "volume_ratio": 1.3
     },
     {
       "ticker": "TSLA",
       "price": 372.11,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.13
+      "volume_ratio": 1.16
     },
     {
       "ticker": "NVDA",
       "price": 225.07,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.76
+      "volume_ratio": 0.77
     },
     {
       "ticker": "AAPL",
       "price": 341.07,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.69
+      "volume_ratio": 0.7
     },
     {
       "ticker": "META",
