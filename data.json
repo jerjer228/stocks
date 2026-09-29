@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-29 09:09:29",
+  "last_updated": "2026-09-29 14:55:00",
   "market": {
     "confidence_score": 20,
     "spy_status": "跌 (-0.81%)",
@@ -50,74 +50,74 @@
   ],
   "top_10_recommendations": [
     {
-      "ticker": "MSFT",
-      "price": 516.17,
+      "ticker": "NVDA",
+      "price": 228.86,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.75
-    },
-    {
-      "ticker": "QCOM",
-      "price": 201.97,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.22
+      "volume_ratio": 1.25
     },
     {
       "ticker": "ARM",
-      "price": 310.32,
+      "price": 283.33,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.32
+      "volume_ratio": 1.63
     },
     {
-      "ticker": "SMCI",
-      "price": 43.26,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.3
-    },
-    {
-      "ticker": "TSLA",
-      "price": 372.11,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 1.16
-    },
-    {
-      "ticker": "NVDA",
-      "price": 225.07,
+      "ticker": "AAPL",
+      "price": 338.4,
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 0.77
     },
     {
-      "ticker": "AAPL",
-      "price": 341.07,
+      "ticker": "MSFT",
+      "price": 509.22,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.7
+      "volume_ratio": 0.92
     },
     {
       "ticker": "META",
-      "price": 751.66,
+      "price": 715.62,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.12
+      "volume_ratio": 1.18
     },
     {
       "ticker": "AMD",
-      "price": 630.63,
+      "price": 607.87,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.81
+      "volume_ratio": 1.0
     },
     {
       "ticker": "PLTR",
-      "price": 189.67,
+      "price": 187.48,
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 0.67
+    },
+    {
+      "ticker": "INTC",
+      "price": 116.03,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.04
+    },
+    {
+      "ticker": "QCOM",
+      "price": 187.48,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.11
+    },
+    {
+      "ticker": "SMCI",
+      "price": 41.78,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.77
     }
   ]
 }
