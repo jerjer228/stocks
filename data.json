@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-10-07 08:03:03",
+  "last_updated": "2026-10-07 14:00:29",
   "market": {
     "confidence_score": 83,
     "spy_status": "漲 (+0.64%)",
     "qqq_status": "漲 (+0.45%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
@@ -39,74 +39,74 @@
   "avoid_list": [],
   "top_10_recommendations": [
     {
-      "ticker": "MSFT",
-      "price": 525.18,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.23
-    },
-    {
       "ticker": "TSLA",
-      "price": 378.73,
+      "price": 380.68,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.14
+      "volume_ratio": 0.77
     },
     {
       "ticker": "NVDA",
-      "price": 238.9,
+      "price": 239.24,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.16
+      "volume_ratio": 0.93
     },
     {
       "ticker": "AAPL",
-      "price": 332.89,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.82
-    },
-    {
-      "ticker": "META",
-      "price": 741.9,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.64
-    },
-    {
-      "ticker": "AMD",
-      "price": 631.75,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.61
-    },
-    {
-      "ticker": "PLTR",
-      "price": 189.4,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.79
-    },
-    {
-      "ticker": "INTC",
-      "price": 116.19,
+      "price": 333.63,
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 0.73
     },
     {
-      "ticker": "ARM",
-      "price": 302.9,
+      "ticker": "MSFT",
+      "price": 529.3,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.49
+      "volume_ratio": 0.97
+    },
+    {
+      "ticker": "META",
+      "price": 738.88,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.54
+    },
+    {
+      "ticker": "AMD",
+      "price": 649.42,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.09
+    },
+    {
+      "ticker": "PLTR",
+      "price": 192.07,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.79
+    },
+    {
+      "ticker": "AVGO",
+      "price": 375.81,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.26
+    },
+    {
+      "ticker": "ARM",
+      "price": 302.56,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.58
     },
     {
       "ticker": "SMCI",
-      "price": 43.19,
+      "price": 43.46,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.6
+      "volume_ratio": 0.77
     }
   ]
 }
