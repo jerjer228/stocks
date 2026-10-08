@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-10-08 07:41:30",
+  "last_updated": "2026-10-08 10:58:58",
   "market": {
     "confidence_score": 38,
-    "spy_status": "跌 (-0.27%)",
-    "qqq_status": "跌 (-0.12%)",
+    "spy_status": "跌 (-0.33%)",
+    "qqq_status": "跌 (-0.19%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $260.38",
+      "strategy": "盤前動量 / $260.21",
       "conviction": "60/100"
     },
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $336.55",
+      "strategy": "盤前觀望 / $336.52",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $350.44",
+      "strategy": "盤前觀望 / $350.50",
       "conviction": "65/100"
     }
   ],
@@ -63,21 +63,21 @@
       "price": 336.67,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.83
+      "volume_ratio": 0.85
     },
     {
       "ticker": "MSFT",
       "price": 529.76,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.73
+      "volume_ratio": 0.76
     },
     {
       "ticker": "META",
       "price": 721.31,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.58
+      "volume_ratio": 0.59
     },
     {
       "ticker": "AMD",
@@ -91,7 +91,7 @@
       "price": 194.12,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.71
+      "volume_ratio": 0.72
     },
     {
       "ticker": "ARM",
@@ -112,7 +112,7 @@
       "price": 259.92,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.97
+      "volume_ratio": 1.0
     }
   ]
 }
