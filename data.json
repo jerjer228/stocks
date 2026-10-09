@@ -1,49 +1,49 @@
 {
-  "last_updated": "2026-10-09 10:29:31",
+  "last_updated": "2026-10-09 17:32:45",
   "market": {
-    "confidence_score": 37,
-    "spy_status": "跌 (-0.37%)",
-    "qqq_status": "跌 (-1.32%)",
+    "confidence_score": 74,
+    "spy_status": "漲 (+0.37%)",
+    "qqq_status": "漲 (+0.87%)",
     "vix_val": "18.00",
-    "session": "休市 (Closed)"
+    "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
-      "ticker": "AAPL",
-      "strategy": "盤前動量 / $340.60",
+      "ticker": "AMD",
+      "strategy": "盤前動量 / $631.99",
+      "conviction": "80/100"
+    },
+    {
+      "ticker": "NVDA",
+      "strategy": "盤前動量 / $234.26",
+      "conviction": "80/100"
+    },
+    {
+      "ticker": "TSLA",
+      "strategy": "盤前動量 / $379.42",
       "conviction": "60/100"
-    },
-    {
-      "ticker": "META",
-      "strategy": "盤前觀望 / $719.42",
-      "conviction": "65/100"
-    },
-    {
-      "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $348.41",
-      "conviction": "65/100"
     }
   ],
   "long_term_picks": [
     {
-      "ticker": "AAPL",
+      "ticker": "AMD",
+      "reason": "盤前強勢領漲",
+      "score": 80
+    },
+    {
+      "ticker": "NVDA",
+      "reason": "盤前強勢領漲",
+      "score": 80
+    },
+    {
+      "ticker": "TSLA",
       "reason": "盤前強勢領漲",
       "score": 60
     }
   ],
   "avoid_list": [
     {
-      "ticker": "MSFT",
-      "reason": "盤前走弱破位",
-      "risk_level": "高風險"
-    },
-    {
-      "ticker": "AMZN",
-      "reason": "盤前走弱破位",
-      "risk_level": "高風險"
-    },
-    {
-      "ticker": "NVDA",
+      "ticker": "AAPL",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     }
