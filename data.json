@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-10-09 06:29:19",
+  "last_updated": "2026-10-09 10:29:31",
   "market": {
-    "confidence_score": 39,
-    "spy_status": "跌 (-0.33%)",
-    "qqq_status": "跌 (-1.10%)",
+    "confidence_score": 37,
+    "spy_status": "跌 (-0.37%)",
+    "qqq_status": "跌 (-1.32%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $340.44",
+      "strategy": "盤前動量 / $340.60",
       "conviction": "60/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前觀望 / $721.35",
+      "strategy": "盤前觀望 / $719.42",
       "conviction": "65/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $349.10",
+      "strategy": "盤前觀望 / $348.41",
       "conviction": "65/100"
     }
   ],
@@ -75,14 +75,14 @@
       "price": 340.42,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.9
+      "volume_ratio": 0.92
     },
     {
       "ticker": "MSFT",
       "price": 522.61,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.88
+      "volume_ratio": 0.91
     },
     {
       "ticker": "META",
@@ -96,7 +96,7 @@
       "price": 620.68,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.04
+      "volume_ratio": 1.05
     },
     {
       "ticker": "SMCI",
@@ -110,7 +110,7 @@
       "price": 254.06,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.01
+      "volume_ratio": 1.05
     },
     {
       "ticker": "GOOGL",
