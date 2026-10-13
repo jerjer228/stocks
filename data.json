@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-10-13 08:14:14",
+  "last_updated": "2026-10-13 14:51:58",
   "market": {
     "confidence_score": 39,
     "spy_status": "跌 (-0.16%)",
     "qqq_status": "跌 (-0.99%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
@@ -60,74 +60,74 @@
   ],
   "top_10_recommendations": [
     {
-      "ticker": "PLTR",
-      "price": 209.05,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.56
-    },
-    {
       "ticker": "TSLA",
-      "price": 382.7,
+      "price": 378.03,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.09
-    },
-    {
-      "ticker": "NVDA",
-      "price": 229.28,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.78
+      "volume_ratio": 0.57
     },
     {
       "ticker": "AAPL",
-      "price": 336.64,
+      "price": 340.97,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.0
+      "volume_ratio": 0.7
     },
     {
       "ticker": "MSFT",
-      "price": 535.07,
+      "price": 541.15,
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 0.83
     },
     {
-      "ticker": "AMD",
-      "price": 608.1,
+      "ticker": "META",
+      "price": 742.96,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.62
+      "volume_ratio": 1.13
     },
     {
-      "ticker": "SMCI",
-      "price": 41.86,
+      "ticker": "GOOGL",
+      "price": 352.72,
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 0.75
     },
     {
-      "ticker": "AMZN",
-      "price": 262.43,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.94
+      "ticker": "PLTR",
+      "price": 209.0,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.02
     },
     {
-      "ticker": "GOOGL",
-      "price": 351.66,
+      "ticker": "AMZN",
+      "price": 259.53,
       "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.72
+    },
+    {
+      "ticker": "COST",
+      "price": 959.44,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.63
+    },
+    {
+      "ticker": "NVDA",
+      "price": 226.32,
+      "score": 30,
       "signal": "Watch",
       "volume_ratio": 0.66
     },
     {
-      "ticker": "AVGO",
-      "price": 361.54,
-      "score": 40,
+      "ticker": "AMD",
+      "price": 594.24,
+      "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.7
+      "volume_ratio": 0.71
     }
   ]
 }
