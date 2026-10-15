@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-10-15 08:31:41",
+  "last_updated": "2026-10-15 13:15:06",
   "market": {
     "confidence_score": 24,
     "spy_status": "跌 (-1.34%)",
     "qqq_status": "跌 (-2.89%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
@@ -40,74 +40,74 @@
   ],
   "top_10_recommendations": [
     {
-      "ticker": "TSLA",
-      "price": 375.23,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.53
-    },
-    {
-      "ticker": "NVDA",
-      "price": 228.52,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.8
-    },
-    {
       "ticker": "AAPL",
-      "price": 341.27,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 1.04
+      "price": 342.96,
+      "score": 100,
+      "signal": "Strong Buy",
+      "volume_ratio": 1.31
     },
     {
       "ticker": "MSFT",
-      "price": 543.45,
+      "price": 533.69,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.06
+      "volume_ratio": 0.98
     },
     {
       "ticker": "META",
-      "price": 762.5,
+      "price": 737.54,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.73
+    },
+    {
+      "ticker": "GOOGL",
+      "price": 347.64,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.07
+    },
+    {
+      "ticker": "PLTR",
+      "price": 200.97,
       "score": 70,
       "signal": "Buy",
       "volume_ratio": 1.03
     },
     {
-      "ticker": "GOOGL",
-      "price": 353.78,
+      "ticker": "COST",
+      "price": 982.0,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.91
-    },
-    {
-      "ticker": "PLTR",
-      "price": 208.67,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.8
+      "volume_ratio": 1.31
     },
     {
       "ticker": "AMZN",
-      "price": 258.58,
+      "price": 254.08,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.7
+      "volume_ratio": 0.95
     },
     {
-      "ticker": "AVGO",
-      "price": 357.31,
+      "ticker": "NFLX",
+      "price": 70.57,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.76
+      "volume_ratio": 1.05
     },
     {
-      "ticker": "COST",
-      "price": 954.63,
-      "score": 40,
+      "ticker": "TSLA",
+      "price": 367.16,
+      "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.62
+      "volume_ratio": 0.89
+    },
+    {
+      "ticker": "NVDA",
+      "price": 221.3,
+      "score": 30,
+      "signal": "Watch",
+      "volume_ratio": 1.1
     }
   ]
 }
