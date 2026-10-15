@@ -1,43 +1,31 @@
 {
-  "last_updated": "2026-10-15 13:15:06",
+  "last_updated": "2026-10-15 18:02:33",
   "market": {
-    "confidence_score": 24,
-    "spy_status": "跌 (-1.34%)",
-    "qqq_status": "跌 (-2.89%)",
+    "confidence_score": 55,
+    "spy_status": "漲 (+0.04%)",
+    "qqq_status": "跌 (-0.18%)",
     "vix_val": "18.00",
-    "session": "休市 (Closed)"
+    "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
-      "ticker": "AAPL",
-      "strategy": "盤前動量 / $344.78",
-      "conviction": "60/100"
-    }
-  ],
-  "long_term_picks": [
+      "ticker": "AMD",
+      "strategy": "盤前觀望 / $557.20",
+      "conviction": "65/100"
+    },
     {
       "ticker": "AAPL",
-      "reason": "盤前強勢領漲",
-      "score": 60
-    }
-  ],
-  "avoid_list": [
+      "strategy": "盤前觀望 / $345.48",
+      "conviction": "65/100"
+    },
     {
       "ticker": "MSFT",
-      "reason": "盤前走弱破位",
-      "risk_level": "高風險"
-    },
-    {
-      "ticker": "GOOGL",
-      "reason": "盤前走弱破位",
-      "risk_level": "高風險"
-    },
-    {
-      "ticker": "TSLA",
-      "reason": "盤前走弱破位",
-      "risk_level": "高風險"
+      "strategy": "盤前觀望 / $531.35",
+      "conviction": "65/100"
     }
   ],
+  "long_term_picks": [],
+  "avoid_list": [],
   "top_10_recommendations": [
     {
       "ticker": "AAPL",
