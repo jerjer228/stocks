@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-10-16 08:35:34",
+  "last_updated": "2026-10-16 13:03:19",
   "market": {
     "confidence_score": 67,
     "spy_status": "漲 (+0.42%)",
     "qqq_status": "漲 (+0.31%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
@@ -65,10 +65,10 @@
     },
     {
       "ticker": "META",
-      "price": 737.54,
+      "price": 736.72,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.74
+      "volume_ratio": 0.76
     },
     {
       "ticker": "GOOGL",
@@ -79,10 +79,10 @@
     },
     {
       "ticker": "PLTR",
-      "price": 200.97,
+      "price": 200.5,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.04
+      "volume_ratio": 1.06
     },
     {
       "ticker": "COST",
