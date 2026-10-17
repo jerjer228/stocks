@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-10-17 07:54:03",
+  "last_updated": "2026-10-17 11:18:57",
   "market": {
-    "confidence_score": 25,
-    "spy_status": "跌 (-1.21%)",
+    "confidence_score": 24,
+    "spy_status": "跌 (-1.18%)",
     "qqq_status": "跌 (-2.27%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $342.57",
+      "strategy": "盤前觀望 / $342.62",
       "conviction": "65/100"
     }
   ],
@@ -45,7 +45,7 @@
       "price": 529.05,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.08
+      "volume_ratio": 1.11
     },
     {
       "ticker": "NFLX",
@@ -66,21 +66,21 @@
       "price": 186.03,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.43
+      "volume_ratio": 1.44
     },
     {
       "ticker": "SMCI",
       "price": 31.63,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.28
+      "volume_ratio": 1.29
     },
     {
       "ticker": "COST",
       "price": 989.11,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 1.04
+      "volume_ratio": 1.09
     },
     {
       "ticker": "NVDA",
@@ -94,14 +94,14 @@
       "price": 709.33,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.94
+      "volume_ratio": 0.95
     },
     {
       "ticker": "GOOGL",
       "price": 340.59,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.12
+      "volume_ratio": 1.14
     }
   ]
 }
