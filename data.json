@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-10-20 04:06:48",
+  "last_updated": "2026-10-20 07:43:02",
   "market": {
     "confidence_score": 82,
-    "spy_status": "漲 (+0.74%)",
-    "qqq_status": "漲 (+1.47%)",
+    "spy_status": "漲 (+0.85%)",
+    "qqq_status": "漲 (+1.63%)",
     "vix_val": "18.00",
-    "session": "盤中交易 (Regular)"
+    "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $262.55",
+      "strategy": "盤前動量 / $263.26",
       "conviction": "80/100"
     },
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $367.56",
+      "strategy": "盤前動量 / $368.79",
       "conviction": "80/100"
     },
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $537.55",
+      "strategy": "盤前動量 / $540.00",
       "conviction": "80/100"
     }
   ],
@@ -48,70 +48,70 @@
       "price": 342.94,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.89
+      "volume_ratio": 0.93
     },
     {
       "ticker": "MSFT",
       "price": 533.52,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.74
+      "volume_ratio": 0.8
     },
     {
       "ticker": "AMZN",
       "price": 262.45,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.42
+      "volume_ratio": 1.5
     },
     {
       "ticker": "PLTR",
       "price": 194.15,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.97
+      "volume_ratio": 1.02
     },
     {
       "ticker": "COST",
       "price": 995.53,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.71
+      "volume_ratio": 0.76
     },
     {
       "ticker": "TSLA",
       "price": 368.06,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.11
+      "volume_ratio": 1.12
     },
     {
       "ticker": "NVDA",
       "price": 217.09,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.87
+      "volume_ratio": 0.94
     },
     {
       "ticker": "META",
       "price": 705.44,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.71
+      "volume_ratio": 0.78
     },
     {
       "ticker": "GOOGL",
       "price": 344.18,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.71
+      "volume_ratio": 0.77
     },
     {
       "ticker": "AMD",
       "price": 538.05,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.98
+      "volume_ratio": 1.0
     }
   ]
 }
