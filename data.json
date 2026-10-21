@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-10-21 08:08:56",
+  "last_updated": "2026-10-21 12:48:19",
   "market": {
     "confidence_score": 81,
     "spy_status": "漲 (+0.42%)",
-    "qqq_status": "漲 (+0.53%)",
+    "qqq_status": "漲 (+0.55%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
@@ -60,74 +60,74 @@
   ],
   "top_10_recommendations": [
     {
-      "ticker": "AAPL",
-      "price": 342.94,
+      "ticker": "TSLA",
+      "price": 373.71,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.94
+      "volume_ratio": 0.91
+    },
+    {
+      "ticker": "AAPL",
+      "price": 339.5,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.97
     },
     {
       "ticker": "MSFT",
-      "price": 533.52,
+      "price": 531.87,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.82
-    },
-    {
-      "ticker": "AMZN",
-      "price": 262.45,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 1.54
-    },
-    {
-      "ticker": "PLTR",
-      "price": 194.15,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 1.03
+      "volume_ratio": 0.68
     },
     {
       "ticker": "COST",
-      "price": 995.53,
+      "price": 994.61,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.76
-    },
-    {
-      "ticker": "TSLA",
-      "price": 368.06,
-      "score": 30,
-      "signal": "Watch",
-      "volume_ratio": 1.12
-    },
-    {
-      "ticker": "NVDA",
-      "price": 217.09,
-      "score": 30,
-      "signal": "Watch",
       "volume_ratio": 0.95
     },
     {
-      "ticker": "META",
-      "price": 705.44,
+      "ticker": "AMZN",
+      "price": 262.63,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 0.96
+    },
+    {
+      "ticker": "NVDA",
+      "price": 216.47,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.81
+      "volume_ratio": 0.76
+    },
+    {
+      "ticker": "META",
+      "price": 694.25,
+      "score": 30,
+      "signal": "Watch",
+      "volume_ratio": 0.87
     },
     {
       "ticker": "GOOGL",
-      "price": 344.18,
+      "price": 340.28,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.81
+      "volume_ratio": 0.76
     },
     {
       "ticker": "AMD",
-      "price": 538.05,
+      "price": 534.74,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.01
+      "volume_ratio": 0.78
+    },
+    {
+      "ticker": "PLTR",
+      "price": 192.6,
+      "score": 30,
+      "signal": "Watch",
+      "volume_ratio": 0.66
     }
   ]
 }
