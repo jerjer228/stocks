@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-11-02 08:51:26",
+  "last_updated": "2026-11-02 15:20:49",
   "market": {
     "confidence_score": 22,
     "spy_status": "跌 (-1.00%)",
     "qqq_status": "跌 (-1.64%)",
     "vix_val": "18.00",
-    "session": "週末休市"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
