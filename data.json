@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-11-03 07:59:36",
+  "last_updated": "2026-11-03 14:29:54",
   "market": {
     "confidence_score": 29,
-    "spy_status": "跌 (-0.53%)",
-    "qqq_status": "跌 (-1.42%)",
+    "spy_status": "跌 (-0.54%)",
+    "qqq_status": "跌 (-1.48%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $246.83",
+      "strategy": "盤前動量 / $246.55",
       "conviction": "80/100"
     },
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $404.40",
+      "strategy": "盤前動量 / $404.30",
       "conviction": "60/100"
     },
     {
       "ticker": "GOOGL",
-      "strategy": "盤前觀望 / $280.29",
+      "strategy": "盤前觀望 / $280.40",
       "conviction": "65/100"
     }
   ],
@@ -66,21 +66,21 @@
       "price": 403.82,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.17
+      "volume_ratio": 1.18
     },
     {
       "ticker": "AAPL",
       "price": 338.32,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.4
+      "volume_ratio": 1.52
     },
     {
       "ticker": "MSFT",
       "price": 507.12,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.52
+      "volume_ratio": 1.54
     },
     {
       "ticker": "AMZN",
@@ -94,35 +94,35 @@
       "price": 466.84,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.48
+      "volume_ratio": 1.49
     },
     {
       "ticker": "PLTR",
       "price": 178.34,
       "score": 60,
       "signal": "Buy",
-      "volume_ratio": 1.45
+      "volume_ratio": 1.52
     },
     {
       "ticker": "META",
       "price": 606.73,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.81
+      "volume_ratio": 0.83
     },
     {
       "ticker": "GOOGL",
       "price": 278.99,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.41
+      "volume_ratio": 1.42
     },
     {
       "ticker": "INTC",
       "price": 59.97,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.84
+      "volume_ratio": 1.85
     }
   ]
 }
