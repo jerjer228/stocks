@@ -1,27 +1,27 @@
 {
-  "last_updated": "2026-11-06 19:04:51",
+  "last_updated": "2026-11-07 01:57:55",
   "market": {
-    "confidence_score": 68,
-    "spy_status": "漲 (+0.16%)",
-    "qqq_status": "漲 (+0.87%)",
+    "confidence_score": 89,
+    "spy_status": "漲 (+0.91%)",
+    "qqq_status": "漲 (+1.74%)",
     "vix_val": "18.00",
-    "session": "盤前交易 (Pre-Market)"
+    "session": "盤中交易 (Regular)"
   },
   "tonight_trades": [
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $432.09",
-      "conviction": "80/100"
-    },
-    {
-      "ticker": "NVDA",
-      "strategy": "盤前動量 / $189.10",
+      "strategy": "盤前動量 / $437.35",
       "conviction": "80/100"
     },
     {
       "ticker": "TSLA",
-      "strategy": "盤前觀望 / $349.16",
-      "conviction": "65/100"
+      "strategy": "盤前動量 / $358.64",
+      "conviction": "80/100"
+    },
+    {
+      "ticker": "META",
+      "strategy": "盤前動量 / $617.91",
+      "conviction": "80/100"
     }
   ],
   "long_term_picks": [
@@ -31,7 +31,12 @@
       "score": 80
     },
     {
-      "ticker": "NVDA",
+      "ticker": "TSLA",
+      "reason": "盤前強勢領漲",
+      "score": 80
+    },
+    {
+      "ticker": "META",
       "reason": "盤前強勢領漲",
       "score": 80
     }
@@ -40,73 +45,73 @@
   "top_10_recommendations": [
     {
       "ticker": "AAPL",
-      "price": 344.17,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.56
+      "price": 343.96,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.43
     },
     {
       "ticker": "MSFT",
-      "price": 535.93,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.68
+      "price": 533.6,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.46
     },
     {
       "ticker": "AMZN",
-      "price": 260.21,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 1.78
+      "price": 261.63,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.41
     },
     {
       "ticker": "COST",
-      "price": 1065.59,
-      "score": 100,
-      "signal": "Strong Buy",
-      "volume_ratio": 2.0
+      "price": 1061.81,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.47
     },
     {
       "ticker": "TSLA",
-      "price": 343.69,
-      "score": 60,
-      "signal": "Buy",
-      "volume_ratio": 1.98
+      "price": 358.58,
+      "score": 30,
+      "signal": "Watch",
+      "volume_ratio": 0.57
     },
     {
       "ticker": "PLTR",
-      "price": 154.99,
-      "score": 60,
-      "signal": "Buy",
-      "volume_ratio": 1.83
+      "price": 160.9,
+      "score": 30,
+      "signal": "Watch",
+      "volume_ratio": 0.54
     },
     {
       "ticker": "NVDA",
-      "price": 181.6,
-      "score": 30,
+      "price": 186.29,
+      "score": 0,
       "signal": "Watch",
-      "volume_ratio": 2.69
+      "volume_ratio": 0.95
+    },
+    {
+      "ticker": "META",
+      "price": 617.91,
+      "score": 0,
+      "signal": "Watch",
+      "volume_ratio": 0.33
     },
     {
       "ticker": "GOOGL",
-      "price": 282.57,
-      "score": 30,
+      "price": 285.54,
+      "score": 0,
       "signal": "Watch",
-      "volume_ratio": 1.4
+      "volume_ratio": 0.46
     },
     {
       "ticker": "AMD",
-      "price": 404.4,
-      "score": 30,
+      "price": 437.35,
+      "score": 0,
       "signal": "Watch",
-      "volume_ratio": 2.72
-    },
-    {
-      "ticker": "INTC",
-      "price": 52.25,
-      "score": 30,
-      "signal": "Watch",
-      "volume_ratio": 1.93
+      "volume_ratio": 1.04
     }
   ]
 }
