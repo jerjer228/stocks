@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-11-11 09:44:04",
+  "last_updated": "2026-11-11 16:26:29",
   "market": {
     "confidence_score": 45,
     "spy_status": "跌 (-0.13%)",
@@ -114,10 +114,10 @@
     },
     {
       "ticker": "PLTR",
-      "price": 169.2,
+      "price": 168.82,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.9
+      "volume_ratio": 0.74
     }
   ]
 }
