@@ -1,30 +1,36 @@
 {
-  "last_updated": "2026-11-13 23:36:02",
+  "last_updated": "2026-11-14 05:39:30",
   "market": {
-    "confidence_score": 25,
-    "spy_status": "跌 (-1.28%)",
-    "qqq_status": "跌 (-2.65%)",
+    "confidence_score": 24,
+    "spy_status": "跌 (-1.27%)",
+    "qqq_status": "跌 (-2.53%)",
     "vix_val": "18.00",
-    "session": "盤中交易 (Regular)"
+    "session": "盤後交易 (After-Hours)"
   },
   "tonight_trades": [
     {
-      "ticker": "AAPL",
-      "strategy": "盤前觀望 / $358.47",
-      "conviction": "65/100"
+      "ticker": "META",
+      "strategy": "盤前動量 / $638.10",
+      "conviction": "80/100"
     },
     {
-      "ticker": "META",
-      "strategy": "盤前觀望 / $627.89",
+      "ticker": "AAPL",
+      "strategy": "盤前觀望 / $355.40",
       "conviction": "65/100"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前觀望 / $521.67",
+      "strategy": "盤前觀望 / $521.68",
       "conviction": "65/100"
     }
   ],
-  "long_term_picks": [],
+  "long_term_picks": [
+    {
+      "ticker": "META",
+      "reason": "盤前強勢領漲",
+      "score": 80
+    }
+  ],
   "avoid_list": [
     {
       "ticker": "AMZN",
@@ -45,73 +51,73 @@
   "top_10_recommendations": [
     {
       "ticker": "TSLA",
-      "price": 387.5,
+      "price": 390.22,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.36
+      "volume_ratio": 0.81
     },
     {
       "ticker": "AAPL",
-      "price": 358.43,
+      "price": 356.27,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.22
+      "volume_ratio": 0.83
     },
     {
       "ticker": "AMZN",
-      "price": 265.35,
+      "price": 266.66,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.15
-    },
-    {
-      "ticker": "COST",
-      "price": 1106.79,
-      "score": 70,
-      "signal": "Buy",
-      "volume_ratio": 0.17
+      "volume_ratio": 0.6
     },
     {
       "ticker": "AMD",
-      "price": 528.27,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.51
+      "price": 534.06,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 1.4
     },
     {
-      "ticker": "AVGO",
-      "price": 340.74,
-      "score": 40,
-      "signal": "Watch",
-      "volume_ratio": 0.36
-    },
-    {
-      "ticker": "MSFT",
-      "price": 521.63,
-      "score": 30,
-      "signal": "Watch",
-      "volume_ratio": 0.25
-    },
-    {
-      "ticker": "NVDA",
-      "price": 159.46,
-      "score": 0,
-      "signal": "Watch",
-      "volume_ratio": 0.76
+      "ticker": "COST",
+      "price": 1106.21,
+      "score": 70,
+      "signal": "Buy",
+      "volume_ratio": 0.79
     },
     {
       "ticker": "META",
-      "price": 627.89,
-      "score": 0,
+      "price": 641.69,
+      "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.19
+      "volume_ratio": 0.63
+    },
+    {
+      "ticker": "AVGO",
+      "price": 347.01,
+      "score": 40,
+      "signal": "Watch",
+      "volume_ratio": 1.17
+    },
+    {
+      "ticker": "NVDA",
+      "price": 162.85,
+      "score": 30,
+      "signal": "Watch",
+      "volume_ratio": 1.73
+    },
+    {
+      "ticker": "MSFT",
+      "price": 523.88,
+      "score": 30,
+      "signal": "Watch",
+      "volume_ratio": 0.97
     },
     {
       "ticker": "GOOGL",
-      "price": 295.03,
+      "price": 295.77,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 0.26
+      "volume_ratio": 0.75
     }
   ]
 }
