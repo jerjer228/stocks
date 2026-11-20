@@ -1,16 +1,16 @@
 {
-  "last_updated": "2026-11-20 08:47:54",
+  "last_updated": "2026-11-20 16:08:05",
   "market": {
     "confidence_score": 15,
-    "spy_status": "跌 (-2.67%)",
-    "qqq_status": "跌 (-3.59%)",
+    "spy_status": "跌 (-2.52%)",
+    "qqq_status": "跌 (-3.46%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前觀望 / $350.95",
+      "strategy": "盤前觀望 / $351.56",
       "conviction": "65/100"
     }
   ],
@@ -38,7 +38,7 @@
       "price": 349.21,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.85
+      "volume_ratio": 0.86
     },
     {
       "ticker": "COST",
@@ -52,42 +52,42 @@
       "price": 346.65,
       "score": 40,
       "signal": "Watch",
-      "volume_ratio": 0.89
+      "volume_ratio": 0.92
     },
     {
       "ticker": "TSLA",
       "price": 374.41,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.71
+      "volume_ratio": 0.73
     },
     {
       "ticker": "NVDA",
       "price": 145.98,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.22
+      "volume_ratio": 1.23
     },
     {
       "ticker": "MSFT",
       "price": 498.3,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.01
+      "volume_ratio": 1.03
     },
     {
       "ticker": "AMZN",
       "price": 257.37,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.03
+      "volume_ratio": 1.05
     },
     {
       "ticker": "AMD",
       "price": 489.19,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.79
+      "volume_ratio": 1.8
     },
     {
       "ticker": "META",
@@ -101,7 +101,7 @@
       "price": 272.66,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 1.12
+      "volume_ratio": 1.14
     }
   ]
 }
