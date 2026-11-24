@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-11-24 05:25:54",
+  "last_updated": "2026-11-24 13:27:03",
   "market": {
     "confidence_score": 93,
-    "spy_status": "漲 (+3.74%)",
-    "qqq_status": "漲 (+5.46%)",
+    "spy_status": "漲 (+3.94%)",
+    "qqq_status": "漲 (+5.78%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "NVDA",
-      "strategy": "盤前動量 / $164.99",
+      "strategy": "盤前動量 / $166.79",
       "conviction": "80/100"
     },
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $385.64",
+      "strategy": "盤前動量 / $388.15",
       "conviction": "80/100"
     },
     {
       "ticker": "META",
-      "strategy": "盤前動量 / $597.50",
+      "strategy": "盤前動量 / $599.58",
       "conviction": "80/100"
     }
   ],
@@ -48,35 +48,35 @@
       "price": 385.46,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.26
+      "volume_ratio": 1.29
     },
     {
       "ticker": "COST",
       "price": 1097.91,
       "score": 100,
       "signal": "Strong Buy",
-      "volume_ratio": 1.2
+      "volume_ratio": 1.22
     },
     {
       "ticker": "AAPL",
       "price": 349.08,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 1.13
+      "volume_ratio": 1.16
     },
     {
       "ticker": "NVDA",
       "price": 165.05,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 2.4
+      "volume_ratio": 2.42
     },
     {
       "ticker": "MSFT",
       "price": 492.5,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 0.98
+      "volume_ratio": 0.99
     },
     {
       "ticker": "AMZN",
@@ -90,14 +90,14 @@
       "price": 453.46,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.2
+      "volume_ratio": 1.22
     },
     {
       "ticker": "PLTR",
       "price": 159.36,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.23
+      "volume_ratio": 1.24
     },
     {
       "ticker": "AVGO",
@@ -107,11 +107,11 @@
       "volume_ratio": 1.3
     },
     {
-      "ticker": "QCOM",
-      "price": 165.38,
+      "ticker": "NFLX",
+      "price": 58.1,
       "score": 30,
       "signal": "Watch",
-      "volume_ratio": 1.32
+      "volume_ratio": 1.24
     }
   ]
 }
