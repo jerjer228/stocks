@@ -1,49 +1,33 @@
 {
-  "last_updated": "2026-11-25 08:47:52",
+  "last_updated": "2026-11-25 17:37:28",
   "market": {
-    "confidence_score": 31,
-    "spy_status": "跌 (-0.81%)",
-    "qqq_status": "跌 (-2.23%)",
+    "confidence_score": 24,
+    "spy_status": "跌 (-0.97%)",
+    "qqq_status": "跌 (-1.74%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "盤前交易 (Pre-Market)"
   },
   "tonight_trades": [
     {
       "ticker": "AAPL",
-      "strategy": "盤前動量 / $353.94",
-      "conviction": "60/100"
+      "strategy": "盤前觀望 / $351.96",
+      "conviction": "65/100"
+    }
+  ],
+  "long_term_picks": [],
+  "avoid_list": [
+    {
+      "ticker": "META",
+      "reason": "盤前走弱破位",
+      "risk_level": "高風險"
     },
     {
       "ticker": "MSFT",
-      "strategy": "盤前觀望 / $495.12",
-      "conviction": "65/100"
-    },
-    {
-      "ticker": "TSLA",
-      "strategy": "盤前觀望 / $383.32",
-      "conviction": "65/100"
-    }
-  ],
-  "long_term_picks": [
-    {
-      "ticker": "AAPL",
-      "reason": "盤前強勢領漲",
-      "score": 60
-    }
-  ],
-  "avoid_list": [
-    {
-      "ticker": "AMZN",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     },
     {
       "ticker": "GOOGL",
-      "reason": "盤前走弱破位",
-      "risk_level": "高風險"
-    },
-    {
-      "ticker": "META",
       "reason": "盤前走弱破位",
       "risk_level": "高風險"
     }
@@ -54,21 +38,21 @@
       "price": 384.68,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.79
+      "volume_ratio": 0.81
     },
     {
       "ticker": "AAPL",
       "price": 354.07,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.8
+      "volume_ratio": 0.81
     },
     {
       "ticker": "COST",
       "price": 1091.71,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.97
+      "volume_ratio": 1.03
     },
     {
       "ticker": "AMZN",
@@ -82,28 +66,28 @@
       "price": 155.38,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 1.13
+      "volume_ratio": 1.14
     },
     {
       "ticker": "MSFT",
       "price": 496.13,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 0.73
+      "volume_ratio": 0.75
     },
     {
       "ticker": "META",
       "price": 589.82,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 0.63
+      "volume_ratio": 0.64
     },
     {
       "ticker": "GOOGL",
       "price": 279.05,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 0.72
+      "volume_ratio": 0.73
     },
     {
       "ticker": "AMD",
