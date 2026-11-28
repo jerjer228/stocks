@@ -1,26 +1,26 @@
 {
-  "last_updated": "2026-11-28 05:32:43",
+  "last_updated": "2026-11-28 11:32:56",
   "market": {
     "confidence_score": 95,
-    "spy_status": "漲 (+1.65%)",
-    "qqq_status": "漲 (+2.52%)",
+    "spy_status": "漲 (+1.73%)",
+    "qqq_status": "漲 (+2.57%)",
     "vix_val": "18.00",
-    "session": "盤後交易 (After-Hours)"
+    "session": "休市 (Closed)"
   },
   "tonight_trades": [
     {
       "ticker": "TSLA",
-      "strategy": "盤前動量 / $398.75",
+      "strategy": "盤前動量 / $398.85",
       "conviction": "80/100"
     },
     {
       "ticker": "AMZN",
-      "strategy": "盤前動量 / $254.92",
+      "strategy": "盤前動量 / $255.05",
       "conviction": "80/100"
     },
     {
       "ticker": "AMD",
-      "strategy": "盤前動量 / $422.79",
+      "strategy": "盤前動量 / $422.90",
       "conviction": "80/100"
     }
   ],
@@ -48,21 +48,21 @@
       "price": 400.0,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.72
+      "volume_ratio": 0.74
     },
     {
       "ticker": "AAPL",
       "price": 358.54,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.43
+      "volume_ratio": 0.45
     },
     {
       "ticker": "COST",
       "price": 1097.81,
       "score": 70,
       "signal": "Buy",
-      "volume_ratio": 0.51
+      "volume_ratio": 0.52
     },
     {
       "ticker": "META",
@@ -97,21 +97,21 @@
       "price": 150.49,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 0.51
+      "volume_ratio": 0.52
     },
     {
       "ticker": "MSFT",
       "price": 492.85,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 0.42
+      "volume_ratio": 0.43
     },
     {
       "ticker": "GOOGL",
       "price": 274.96,
       "score": 0,
       "signal": "Watch",
-      "volume_ratio": 0.56
+      "volume_ratio": 0.57
     }
   ]
 }
